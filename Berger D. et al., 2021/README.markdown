@@ -20,32 +20,32 @@ You can download data from WormBase ParaSite using our FTP server
 ### Annotate genomic regions
 Following population genomic analyses, researchers identified a list of genomic regions as being under strong selection in Mayuge where we expect selection for survival following praziquantel treatment to be strongest.
 
-These genomic regions are:
-SM_V7_1:3718001:3846001 
-SM_V7_1:22000001:22052001
-SM_V7_2:2624001:2756001
-SM_V7_2:3434001:4806001
-SM_V7_2:31552001:31566001
-SM_V7_2:31874001:32472001
-SM_V7_2:43554001:43836001
-SM_V7_2:45248001:45450001
-SM_V7_2:46084001:46580001
-SM_V7_2:47004001:48088001
-SM_V7_3:332001:498001
-SM_V7_3:38176001:38342001
-SM_V7_4:2168001:2732001
-SM_V7_4:5108001:5118001
-SM_V7_4:18898001:20024001
-SM_V7_4:21128001:21146001
-SM_V7_5:17006001:17360001
-SM_V7_5:17718001:17840001
-SM_V7_5:20342001:20354001
-SM_V7_7:1604001:1684001
-SM_V7_7:11236001:11294001
-SM_V7_7:13326001:13656001
-SM_V7_ZW:42001:196001
-SM_V7_ZW:6934001:7172001
-SM_V7_ZW:80928001:81030001
+These genomic regions are:<br/>
+SM_V7_1:3718001:3846001<br/> 
+SM_V7_1:22000001:22052001<br/>
+SM_V7_2:2624001:2756001<br/>
+SM_V7_2:3434001:4806001<br/>
+SM_V7_2:31552001:31566001<br/>
+SM_V7_2:31874001:32472001<br/>
+SM_V7_2:43554001:43836001<br/>
+SM_V7_2:45248001:45450001<br/>
+SM_V7_2:46084001:46580001<br/>
+SM_V7_2:47004001:48088001<br/>
+SM_V7_3:332001:498001<br/>
+SM_V7_3:38176001:38342001<br/>
+SM_V7_4:2168001:2732001<br/>
+SM_V7_4:5108001:5118001<br/>
+SM_V7_4:18898001:20024001<br/>
+SM_V7_4:21128001:21146001<br/>
+SM_V7_5:17006001:17360001<br/>
+SM_V7_5:17718001:17840001<br/>
+SM_V7_5:20342001:20354001<br/>
+SM_V7_7:1604001:1684001<br/>
+SM_V7_7:11236001:11294001<br/>
+SM_V7_7:13326001:13656001<br/>
+SM_V7_ZW:42001:196001<br/>
+SM_V7_ZW:6934001:7172001<br/>
+SM_V7_ZW:80928001:81030001<br/>
 
 We can use BioMart to find which genes are in these regions. Because this paper is using an older S. mansoni assembly, we will use the [archived WormBase ParaSite 16 release](https://release-16.parasite.wormbase.org/) which has this assembly.
 
@@ -53,5 +53,7 @@ We can use BioMart to find which genes are in these regions. Because this paper 
 2. Click BioMart at the top menu.
 3. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.
 4. Paste the above genomic coordinates into the dialog box under the REGION tab.
+5. Click on the Output Attributes and customise your output data/format.
+6. Click "Results", when you are done customising, to see the output table.
 
-They can use biomart/VEP or jbrowse to see what genes etc are included in these regions.
+Perform gene set enrichment analysis on the gene-set we got from BioMart:
