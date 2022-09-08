@@ -10,14 +10,14 @@ In this paper, the researchers examine the genomic impact of repeated mass drug 
 
 They collected samples from regions in Uganda with different exposure to praziquantel and performed whole genome sequencing to explore how schistosome populations change in response to repeated MDA as well as to monitor for the potential emergence and spread of praziquantel resistance.
 
-### Reference genome download 
+### Reference genome download
 The S. mansoni reference genome (v.7) was downloaded from WormBase Parasite
 
 You can download data from WormBase ParaSite using our FTP server
 - [WormBase ParaSite FTP server](https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/)
 - S. mansoni V7 reference genome can be found [here](https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS16/species/schistosoma_mansoni/PRJEA36577/).
 
-### Annotate genomic regions
+### Annotating genomic regions
 Following population genomic analyses, researchers identified a list of genomic regions as being under strong selection in Mayuge where we expect selection for survival following praziquantel treatment to be strongest.
 
 These genomic regions are:<br/>
