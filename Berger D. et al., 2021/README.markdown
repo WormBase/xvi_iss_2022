@@ -17,10 +17,10 @@ Let's try to follow the same steps that these researchers used to perform their 
 ### Reference genome download
 The researchers had to download The *S. mansoni* reference genome (v.7) from WormBase Parasite to perform their genomic analyses.
 
-**Task 1: Can you find out how to download data from WormBase ParaSite?**
+**Task 1: Download *S. mansoni*'s reference genome from WormBase ParaSite**
 
 <details closed>
-<summary>Hint</summary>
+<summary>Solution</summary>
 You can download data from WormBase ParaSite using our Downloads page (https://parasite.wormbase.org/ftp.html)<br>
 1. Go to WormBase ParaSite (https://parasite.wormbase.org/)<br>
 2. Click "Downloads" at the top menu.<br>
@@ -59,12 +59,12 @@ SM_V7_ZW:42001:196001<br/>
 SM_V7_ZW:6934001:7172001<br/>
 SM_V7_ZW:80928001:81030001<br/>
 
-**Task 2: Can you find what genes can be found in the above regions using WormBase ParaSite's BioMart tool?**
+**Task 2: Identify all the genes that can be found in the above genomic regions using WormBase ParaSite's BioMart tool.**
 
 This paper is using an older *S. mansoni* assembly, so please use use the archived WormBase ParaSite 16 website (https://release-16.parasite.wormbase.org/) which has this older assembly.
 
 <details closed>
-<summary>Hint</summary>
+<summary>Solution</summary>
 1. Go to WormBase ParaSite archive 16 (https://release-16.parasite.wormbase.org/)<br>
 2. Click "BioMart" at the top menu.<br>
 3. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.<br>
@@ -72,5 +72,50 @@ This paper is using an older *S. mansoni* assembly, so please use use the archiv
 5. Click on the Output Attributes and customise your output data/format (make sure to have "Gene Stable ID" clicked under "Gene attributes").<br>
 6. Click "Results", when you are done customising, to see the output table.<br>
 </details>
+You can find more about BioMart [here](https://parasite.wormbase.org/info/data/biomart/index.html).
 
-Perform gene set enrichment analysis on the gene-set we got from BioMart:
+---
+### Explore gene function 
+
+Using BioMart, we managed to come up with the list of genes that might play a role in the survival following praziquantel treatment.
+
+Now, we need to further explore the function of these genes.
+
+**Task 3. Pick 2-3 genes from your list and Use WormBase ParaSite to manually explore their gene pages.**
+<details closed>
+<summary>Solution</summary>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br>
+2. Paste the Gene ID in the search box at the top right corner of the page and press Enter.<br>
+3. The search will return the gene entry you searched for. Click on the Gene ID to open up the corresponding gene page.<br>
+4. You're on the gene page. Use the menu on your left to navigate.<br>
+5. You can learn more about the gene pages here (https://parasite.wormbase.org/info/Browsing/gene_pages.html).<br>
+</details>
+
+**Task 4. Find out more information about the function of the genes you identified in Task 2, using WormBase ParaSite's BioMart tool.**
+<details closed>
+<summary>Solution</summary>
+1. Go to WormBase ParaSite archive 16 (https://release-16.parasite.wormbase.org/)<br>
+2. Click "BioMart" at the top menu.<br>
+3. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.<br>
+4. Paste the list of Gene IDs from Task 2 into the "ID list limit" dialog box under the GENE tab.<br>
+5. Click on the Output Attributes and customise your output data/format (make sure to have "Gene Stable ID", "Gene description" clicked under the "GENE" tab and "GO term name" under the "GENE ONTOLOGY (GO)" tab.<br>
+6. Click "Results", when you are done customising, to see the output table.<br>
+</details>
+You can find more about BioMart [here](https://parasite.wormbase.org/info/data/biomart/index.html).
+
+---
+### Gene-set enrichment analysis
+After exploring the function and gene ontologies of our list of genes (from Task 2) we will perform "Gene-set enrichment analysis" to identify classes of genes or proteins that are over-represented in our list.
+
+**Task 5. Perform Gene-enrichment analysis on the gene-set obtained from Task 2, using WormBase ParaSite's gProfiler tool.**
+
+<details closed>
+<summary>Solution</summary>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/)<br>
+2. Click "Tools" at the top menu.<br>
+3. Click "g:Profiler" in the tools table.<br>
+4. You are now inside g:Profiler. Paste the gene IDs from Task 2 into the central text box. Select "Schistosoma Mansoni" using the "Organism" drop-down menu and then click on "Run Query".<br>
+5. When results appear, scroll down and hover over the points in the graph to explore gene ontologies which are over-represented in your list of genes. You can also click on "Detailed Results" tab to see a table with all the enriched Gene ontology terms.<br>
+</details>
+
+Are there any gene ontology terms relevant to our research?
