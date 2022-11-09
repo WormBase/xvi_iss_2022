@@ -17,7 +17,20 @@ Let's try to follow the same steps that these researchers used to perform their 
 ### Reference genome download
 The researchers had to download The *S. mansoni* reference genome (v.7) from WormBase Parasite to perform their genomic analyses.
 
-**Task 1: Download *S. mansoni*'s reference genome from WormBase ParaSite**
+**Task 1: Browse and Download *S. mansoni*'s reference genome from WormBase ParaSite**
+
+Task 1a: Browse the genome list of WormBase ParaSite and S. mansoni genome statistics.
+
+<details closed>
+<summary>Solution</summary>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/)
+2. Click ”Genome List" at the top menu.
+3. Use the Show/hide column at the top of the table to display more genome statistics for each genome.
+4. Hover your mouse pointer over the BUSCO ANNOTATION and BUSCO ASSEMBLY pie charts to reveal the BUSCO metrics for each genome.
+5. Click on Schistosoma mansoni to open its genome landing page. There you can find information about the genome and useful assembly/annotation statistics.
+</details>
+
+Task 1b: Download S. mansoni's reference genome from WormBase ParaSite.
 
 <details closed>
 <summary>Solution</summary>
@@ -25,7 +38,10 @@ You can download data from WormBase ParaSite using our Downloads page (https://p
 1. Go to WormBase ParaSite (https://parasite.wormbase.org/)<br>
 2. Click "Downloads" at the top menu.<br>
 3. In the middle of the page you can find a table with genomes and their FTP links. Search for "mansoni" in the filter text box at the top right corner of the table.<br>
-5. You can use the links appeared for S. mansoni to download the reference genome from our FTP server.<br>
+5. You can use the links appeared for S. mansoni to download the files you need.
+6. To download the reference genome click on the FASTA button under the "Genomic" column for S. mansoni and a download will automatically start.<br>
+
+Alternatively, you can directly browse our FTP server here: https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/
 </details>
 
 ---
