@@ -23,11 +23,11 @@ Task 1a: Browse the genome list of WormBase ParaSite and S. mansoni genome stati
 
 <details closed>
 <summary>Solution</summary>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/)
-2. Click ”Genome List" at the top menu.
-3. Use the Show/hide column at the top of the table to display more genome statistics for each genome.
-4. Hover your mouse pointer over the BUSCO ANNOTATION and BUSCO ASSEMBLY pie charts to reveal the BUSCO metrics for each genome.
-5. Click on Schistosoma mansoni to open its genome landing page. There you can find information about the genome and useful assembly/annotation statistics.
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br>
+2. Click ”Genome List" at the top menu.<br>
+3. Use the Show/hide column at the top of the table to display more genome statistics for each genome.<br>
+4. Hover your mouse pointer over the BUSCO ANNOTATION and BUSCO ASSEMBLY pie charts to reveal the BUSCO metrics for each genome.<br>
+5. Click on Schistosoma mansoni to open its genome landing page. There you can find information about the genome and useful assembly/annotation statistics.<br>
 </details>
 
 Task 1b: Download S. mansoni's reference genome from WormBase ParaSite.
@@ -44,6 +44,65 @@ You can download data from WormBase ParaSite using our Downloads page (https://p
 Alternatively, you can directly browse our FTP server here: https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/
 </details>
 
+---
+### Gene pages
+The researchers write: "The strongest signals of selection were detected within chromosome 2 regions ... Within one of these regions we identified a single locus (47.06–47.34 Mb) containing four sodium/potassium/calcium exchanger proteins (Smp_170450, Smp_336070, Smp_328710, Smp_094390) ... ".
+
+After they discovered these important genes, researchers might want to investigate some basic information about their function, location, sequences etc. WormBase ParaSite's gene pages contain all these information that the researchers might find useful.
+
+Task 2: Navigate to the gene page of one of the genes mentioned by the researchers. Try to find information about the gene's function, transcripts, its UniProt ID and its genomic/protein sequences.
+
+Task 2a: Find general gene information (name, description, how many transcripts etc).
+<details closed>
+<summary>Solution</summary>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br>
+2. Paste the Gene ID (i.e. Smp_336070) in the search box at the top right corner of the page and press Enter.<br>
+3. The search will return the gene entry you searched for. Click on the Gene ID to open up the corresponding gene page.<br>
+4. You're on the gene page. Use the menu on your left to navigate.<br>
+5. You can learn more about the gene pages here (https://parasite.wormbase.org/info/Browsing/gene_pages.html).<br>
+</details>
+
+
+Task 2b: Use the “Region in detail” to visualise the gene in our genome browser. Do the same with Jbrowse.
+<details closed>
+<summary>Solution</summary>
+1. While on the gene page, click on the "Region in detail" button under the "Genomic context" header.<br>
+2. You can now browse the gene's location using the genomic browser. Use your mouse to navigate around the gene and hover over different features of the gene to see more information.<br>
+3. Reverse strand is visible while UTRs are also annotated.<br>
+4. You can use the "Configure tracks" button at the top left of the browser to load more tracks in the view.<br>
+5. You can use "Add RNAseq tracks" or "Add custom tracks".<br>
+6. You can learn more about the Genome Browser here (https://parasite.wormbase.org/info/Browsing/genome_browser_ensembl.html).<br>
+
+Using Jbrowse<br>
+7. Click on the top-right "View region in Jbrowse" button to visualise the same region in a different genome browser called Jbrowse.<br>
+8. You are being redirected to Jbrowse. When Jbrowse loads use your mouse to navigate around the gene and find nearby genes. Click on the gene models to see more information.<br>
+9. Use the "Select tracks" at the top-left of the browser and select a few tracks to add to the view.<br>
+10. You can also load your own tracks by clicking "Track"->"Open track file or URL" from the top menu.<br>
+11. To learn more about Jbrowse visit our help page here (https://parasite.wormbase.org/info/Browsing/genome_browser_jbrowse.html).<br>
+
+Tip: Jbrowse is also accessible via a button in [WormBase ParaSite genome list](https://parasite.wormbase.org/species.html) and the [genome's landing page](https://parasite.wormbase.org/Schistosoma_mansoni_prjea36577).
+</details>
+
+Task 2c: Find the genomic/protein sequence for this gene.
+<details closed>
+<summary>Solution</summary>
+1. While on the gene page, click the "Sequence" on the left "Gene-based displays" menu.<br>
+2. Scroll down and you will see the "Marked-up sequence" for this gene. This is the genomic sequence for this gene. You can download it or Blast it using the buttons above the sequence.<br>
+3. Similarly, to find its protein sequence you need to first go to a gene's trascript page. To do that, click on a trascript ID in the trascript table (above the "Marked-up sequence" header).<br>
+4. You can then use the left "Transcript-based displays" menu to view the sequences of the Exons, cDNA and Protein for this transcript.<br>
+</details>
+
+Task 2d: Explore the protein domains, features and AlphaFold 3D model of the encoded protein.
+<details closed>
+<summary>Solution</summary>
+1. Information about protein domains & features are available at the transcript page. To go to a transcript page you need to click on a transcript ID in the transcript table.<br>
+2. On the left "Transcript-based displays" menu, click on "Domains & features".<br>
+3. Use the tables to discover which domains and features have been annotated in this gene's protein.<br>
+4. On the left "Transcript-based displays" menu, click on the "AlphaFold predicted model".<br>
+5. Use the "AlphaFold predicted model" widget to discover the 3D protein structure of the protein.<br>
+6. Use your mouse (drag/drop) to move and rotate the protein. You can zoom/unzoom using your mouse wheel.<br>
+7. Use the right side menu to show/hide different protein/gene features (e.g. "Exons","PANTHER","Pfam" etc).
+</details>
 ---
 ### Annotating genomic regions
 Following population genomic analyses, researchers identified a list of genomic regions as being under strong selection in Mayuge where we expect selection for survival following praziquantel treatment to be strongest.
