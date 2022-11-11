@@ -72,8 +72,8 @@ Task 2b: Use the “Region in detail” to visualise the gene in our genome brow
 4. You can use the "Configure tracks" button at the top left of the browser to load more tracks in the view.<br>
 5. You can use "Add RNAseq tracks" or "Add custom tracks".<br>
 6. You can learn more about the Genome Browser here (https://parasite.wormbase.org/info/Browsing/genome_browser_ensembl.html).<br>
-
-Using Jbrowse<br>
+<br>
+Using Jbrowse:<br>
 7. Click on the top-right "View region in Jbrowse" button to visualise the same region in a different genome browser called Jbrowse.<br>
 8. You are being redirected to Jbrowse. When Jbrowse loads use your mouse to navigate around the gene and find nearby genes. Click on the gene models to see more information.<br>
 9. Use the "Select tracks" at the top-left of the browser and select a few tracks to add to the view.<br>
@@ -103,6 +103,30 @@ Task 2d: Explore the protein domains, features and AlphaFold 3D model of the enc
 6. Use your mouse (drag/drop) to move and rotate the protein. You can zoom/unzoom using your mouse wheel.<br>
 7. Use the right side menu to show/hide different protein/gene features (e.g. "Exons","PANTHER","Pfam" etc).
 </details>
+
+Task 2e: Find orthologues for this gene in other Schistosoma species.
+
+Wait! What orthologues and paralogues are? Read [here](https://sciencing.com/different-variants-gene-called-8092322.html) and/or [here](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2001-2-8-interactions1002) to find more!
+
+<ins>In a nutshell</ins><br>
+**Orthologues**: Genes which evolved from a common ancestral gene by speciation that usually have retained a similar function in different species.<br>
+**Paralogues**: Paralogs are homologous genes that arise from gene duplication events. Their common ancestry and replicated sequence often leads to similar structure and function in related pathways and protein complexes.<br>
+
+<ins>Why would researchers want to find orthologues in other species for their gene of interest?</ins> Function Annotation! If the function of this gene in S. mansoni is not known, you can check the function of its orthologues genes in other species like C. elegans or other Schistosomas. Many times you will find that orthologous genes function will be similar to this of your gene of interest.
+
+<details closed>
+<summary>Solution</summary>
+1. While on the gene page, click "Orthologues" on the left "Gene-based displays" menu under "Comparative genomics".<br>
+2. We need to wait a little bit for the orthologues to load.<br>
+3. When loaded, two tables are visible: "Summary of orthologues of this gene" and "Selected orthologues".<br>
+4. On the left "Summary of orthologues of this gene" menu, you can select to display orthologues for one or more taxonomic groups (nematodes, platyhelminths)".<br>
+5. The second table shows the list of orthologues found for this gene.<br>
+6. You can use the search box at the top right to filter orthologues just for schistosoma species by typing "schistosoma".<br>
+7. Use the three buttons in the "Compare" column: "Alignment (protein)", "Alignment (cDNA)" and "Gene Tree (image)" to further explore the comparison.
+8. Click on the "Gene Tree (image)" of one of the orthologues in the list, to explore the gene tree for the specific orthologue.
+9. You can follow the same instructions to discover paralogues too!
+</details>
+
 ---
 ### Annotating genomic regions
 Following population genomic analyses, researchers identified a list of genomic regions as being under strong selection in Mayuge where we expect selection for survival following praziquantel treatment to be strongest.
