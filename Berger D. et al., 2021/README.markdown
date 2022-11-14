@@ -129,7 +129,11 @@ Wait! What orthologues and paralogues are? Read [here](https://sciencing.com/dif
 
 ---
 ### Multiple querying 
-Following population genomic analyses, researchers identified a list of genomic regions as being under strong selection in Mayuge where we expect selection for survival following praziquantel treatment to be strongest.
+So far we have seen how you can manually browse [WormBase ParaSite](https://parasite.wormbase.org/) by searching for genes and then navigating to their gene/transcript/protein pages. However, in many cases you might have to automatically extract information from [WormBase ParaSite](https://parasite.wormbase.org/) for multiple entries. Or simply you might need to extract information about your favourite genome's features that fullfil some criteria.<br>
+<br>
+[WormBase ParaSite's BioMart](https://parasite.wormbase.org/biomart/martview/) enables you to perform multiple queries like that as it is an easy-to-use web-based tool that allows extraction of data without any programming knowledge or understanding of the underlying database structure.
+
+**Back to our paper**, following population genomic analyses, researchers identified a list of genomic regions as being under strong selection in Mayuge where we expect selection for survival following praziquantel treatment to be strongest!
 
 These genomic regions are:<br>
 SM_V9_1:3632837:3639271<br>
@@ -160,18 +164,20 @@ SM_V9_7:13266191:13494236<br>
 SM_V9_PAR1:59785:195092<br>
 SM_V9_PAR2:36554914:36616990<br>
 
-**Task 2: Identify all the genes that can be found in the above genomic regions using WormBase ParaSite's BioMart tool.**
-
-This paper is using an older *S. mansoni* assembly, so please use use the archived WormBase ParaSite 16 website (https://release-16.parasite.wormbase.org/) which has this older assembly.
+**Task 3: Identify all the genes that can be found in the above genomic regions using WormBase ParaSite's BioMart tool.**
 
 <details closed>
 <summary>Solution</summary>
-1. Go to WormBase ParaSite archive 16 (https://release-16.parasite.wormbase.org/)<br>
-2. Click "BioMart" at the top menu.<br>
-3. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.<br>
-4. Paste the above genomic coordinates into the "Multiple regions (Chr:Start:End:Strand)" dialog box under the REGION tab.<br>
-5. Click on the Output Attributes and customise your output data/format (make sure to have "Gene Stable ID" clicked under "Gene attributes").<br>
-6. Click "Results", when you are done customising, to see the output table.<br>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
+2. Click "BioMart" at the top menu. You're now on BioMart's page! Filters and attributes can be selected in the right panel. A summary of your choices is also displayed in the left panel.<br><br>
+BioMart allows you to restrict your query with information that you know, e.g: species, input a list of IDs, restrict to a region. You can access the filter page by clicking on the "1. Query Filters" button located on the left panel. Filters are organised into different sections, clicking on the "+/-" boxes will expand/collapse a section and display its content.<br><br>
+3. Expand the "SPECIES" section by clicking on the "+" box on the right panel. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.<br><br>
+4. Expand the "REGION" section by clicking on the "+" box on the right panel. Then, paste the above genomic coordinates into the "Multiple regions (Chr:Start:End:Strand)" dialog box.<br><br>
+By clicking on the "2. Output Attributes" button on the left panel, you will access the mart attribute page. This page allows you to select your desired output; the default output is "Genome project" and "Gene stable ID" in the WormBase ParaSite mart. The attributes are organised in pages that you can access by selecting the radio buttons at the top of the right panel.<br><br> 
+5. Click on the "2. Output Attributes" on the left panel.<br><br>
+6. Expand the "SPECIES AND GENOME INFORMATION" by clicking on the "+" box on the right panel. Then deselect the "Genome project" field. We don't want it in our final table.<br><br>
+7. Expand the "GENE" section by clicking on the "+" box on the right panel. Then make sure that only the "Gene stable ID" field is selected.<br><br>
+8. 
 </details>
 You can find more about BioMart [here](https://parasite.wormbase.org/info/data/biomart/index.html).
 
