@@ -128,7 +128,7 @@ Wait! What orthologues and paralogues are? Read [here](https://sciencing.com/dif
 </details>
 
 ---
-### Annotating genomic regions
+### Multiple querying 
 Following population genomic analyses, researchers identified a list of genomic regions as being under strong selection in Mayuge where we expect selection for survival following praziquantel treatment to be strongest.
 
 These genomic regions are:<br>
