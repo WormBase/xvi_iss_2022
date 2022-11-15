@@ -228,20 +228,3 @@ Now, we need to further explore the function of these genes as we did in Task 2.
 </details>
 You can find more about BioMart [here](https://parasite.wormbase.org/info/data/biomart/index.html).
 BioMart video Tutorial [here](https://www.ensembl.org/Multi/Help/Movie?db=core;id=189).
-
----
-### Gene-set enrichment analysis
-After exploring the function and gene ontologies of our list of genes (from Task 2) we will perform "Gene-set enrichment analysis" to identify classes of genes or proteins that are over-represented in our list.
-
-**Task 5. Perform Gene-enrichment analysis on the gene-set obtained from Task 2, using WormBase ParaSite's gProfiler tool.**
-
-<details closed>
-<summary>Solution</summary>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/)<br>
-2. Click "Tools" at the top menu.<br>
-3. Click "g:Profiler" in the tools table.<br>
-4. You are now inside g:Profiler. Paste the gene IDs from Task 2 into the central text box. Select "Schistosoma Mansoni" using the "Organism" drop-down menu and then click on "Run Query".<br>
-5. When results appear, scroll down and hover over the points in the graph to explore gene ontologies which are over-represented in your list of genes. You can also click on "Detailed Results" tab to see a table with all the enriched Gene ontology terms.<br>
-</details>
-
-Are there any gene ontology terms relevant to our research?
