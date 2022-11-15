@@ -69,6 +69,7 @@ Hint: C_00050 is 	MS3_0018943, C_00244 is MS3_0018942 and B_00796 is MS3_0018941
 3. The search will return the gene entry you searched for. Click on the Gene ID to open up the corresponding gene page.<br><br>
 4. While on the gene page, click "Paralogues" on the left "Gene-based displays" menu under "Comparative genomics".<br><br>
 5. MS3_0018941 and MS3_0018942 are listed in the "Paralogues" table, meaning that MS3_0018943, MS3_0018942 and MS3_0018941 are paralogous genes in S. haematobium. Researchers are right!
+</details>
 
 #### Task 3: Compare the protein domains of these 3 S. haematobium proteins (MS3_0018943, MS3_0018942 and MS3_0018941) with their S. mansoni homologue (Smp_112110). Can you see any similarities?
 
