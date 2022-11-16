@@ -2163,7 +2163,22 @@ Smp_104030<br>
 Are there any gene ontology terms relevant to our research?
 
 Here's the GO enrichment analysis top results for the downregulated genes from our researchers:
-![Table 1. Gene Ontology (GO) analysis of differentially expressed genes (DEGs).]()
+Down-regulated in 5-AzaC
+
+Table1 from Geyer et. al. Gene Ontology (GO) analysis of differentially expressed genes (DEGs).
+| Biological Process | No. of genes associated to functional term |	p-value |
+| --------------------------------------------------- | ------------------------------------------ | ------- |
+| nicotinamide nucleotide metabolic process |	18	| 5.39E-3 |
+| ATP metabolic process	| 30	| 2.20E-5 |
+| carbohydrate metabolic process |	47 |	2.53E-4 |
+| carbohydrate derivative metabolic process |	94 |	2.06E-6 |
+| oxidation-reduction process	| 77 |	2.01E-5 |
+| pyridine nucleotide metabolic process |	18 |	5.39E-3 |
+| pyruvate metabolic process |	13 |	8.11E-3 |
+| generation of precursor metabolites and energy	| 34 |	6.52E-3 |
+| ion transport	| 92	| 2.82E-3 |
+| transmembrane transport	| 91	| 9.63E-4 |
+| purine ribonucleoside monophosphate metabolic process |	33 |	1.11E-5 |
 
 
 Do our results match their results? Why?
