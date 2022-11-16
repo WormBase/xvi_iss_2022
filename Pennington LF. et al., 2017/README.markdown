@@ -42,20 +42,30 @@ BLAST can be used both for DNA and protein sequences.
 7. Selecting the species to search against: Select custom species list. On the pop-up box use the find box at the top left to search for "Schistosoma haematobium". Once "Schistosoma haematobium (PRJNA78265)" appears on the left panel, select it by ticking the tick box. Click on the tick button at the top right of the box to submit your selection. The "Search against" field should now display only one species: Schistosoma haematobium (PRJNA78265). Make sure "Protein database" is selected.<br><br>
 8. Leave all the other options unchanged and click "Run".<br><br>
 9. You'll be prompted to a page showing a table with all your recent BLAST tickets (currently running, failed or completed). The progression of the ticket gets automatically refreshed every 10 seconds until fully completed. The icons on the right can be used to download the results of a ticket, edit and resubmit the ticket, share the ticket via URL or delete the ticket. Click the View results link to see the results.<br><br>
-10. You're now on the Results page for your run:
+10. You're now on the Results page for your run. Follow the links in the results table to get:  
+- Genomic location: shows the BLAST hit on the Region in detail view in the Location tab of the Genome Browser. The BLAST hit will appear as a red bar along the genome. You may want to click on the red bar to view a summary of the search, including E-Value, %ID, etc.
+- Sequence: shows the genomic sequence or query sequence
+- Alignment: shows the BLAST alignment<br><br>
+11. According to the results, it looks like our query protein is very similar to three S. haematobium proteins: MS3_0018943, MS3_0018942 and MS3_0018941. The fourth hit, MS3_0018947 has a quite high E-value and low %ID making it probably a false match.
+</details>
 
+**The results page explained**
 The results are displayed in two sections:
 
 - Job details: Details of the job include job name, search type (e.g. BLASTN), date and time the job was submitted and configuration settings. Click on the title or (-) to collaspe the Job details section.
 
 - Results table: The table lists all hits in order of high to low score (and E-value) and can be customised to show/hide columns. The results can be sorted by any parameters available in the table.
 
-Follow the links in the results table to get:  
-- Genomic location: shows the BLAST hit on the Region in detail view in the Location tab of the Genome Browser. The BLAST hit will appear as a red bar along the genome. You may want to click on the red bar to view a summary of the search, including E-Value, %ID, etc.
-- Sequence: shows the genomic sequence or query sequence
-- Alignment: shows the BLAST alignment<br><br>
-11. According to the results, it looks like our query protein is very similar to three S. haematobium proteins: MS3_0018943, MS3_0018942 and MS3_0018941. The fourth hit, MS3_0018947 has a quite high E-value and low %ID making it probably a false match.
-</details>
+Metrics used in the results table:
+- **Score**: The bit score gives an indication of how good the alignment is; the higher the score, the better
+the alignment. In general terms, this score is calculated from a formula that takes into account
+the alignment of similar or identical residues, as well as any gaps introduced to align the
+sequences.
+- **E-value**: The E-value gives an indication of the statistical significance of a given pairwise alignment
+and reflects the size of the database and the scoring system used. The lower the E-value, the
+more significant the hit. A sequence alignment that has an E-value of 0.05 means that this
+similarity has a 5 in 100 (1 in 20) chance of occurring by chance alone.
+- **%ID or percent identity**: Percent identity is telling you how many residues in your query are an identical match to the hit. Closely related sequences will have a much higher % identity.
 
 Researchers say: "This analysis identified three paralogs within the S. haematobium genome, all with predicted transcripts with high identity to M-IPSE (C_00050 [67% amino acid identity], C_00244 [63%], and B_00796 [56%])." Are these the genes you identified?
 Hint: C_00050 is 	MS3_0018943, C_00244 is MS3_0018942 and B_00796 is MS3_0018941.
