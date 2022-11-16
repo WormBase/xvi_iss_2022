@@ -291,9 +291,9 @@ The VEP allows you to download either your full or filtered results set in a cho
 
 ## Task 2: Based on the VEP result, which variants you think will have the greater effects on the protein function?
 
-<details>
+<details open>
 <summary>Hint</summary>
-- Use the "Filters" console and apply relevant filters to the "Consequence" and "Impact" columns.
+- Use the "Filters" console and apply relevant filters to the "Consequence" and "Impact" columns.<br>
 - Use the "Show/Hide columns" button to show the "Protein position" and "Amino Acid" columns.
 </details>
 
