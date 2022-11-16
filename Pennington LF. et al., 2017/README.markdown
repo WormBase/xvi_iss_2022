@@ -42,9 +42,9 @@ BLAST can be used both for DNA and protein sequences.
 7. Selecting the species to search against: Select custom species list. On the pop-up box use the find box at the top left to search for "Schistosoma haematobium". Once "Schistosoma haematobium (PRJNA78265)" appears on the left panel, select it by ticking the tick box. Click on the tick button at the top right of the box to submit your selection. The "Search against" field should now display only one species: Schistosoma haematobium (PRJNA78265). Make sure "Protein database" is selected.<br><br>
 8. Leave all the other options unchanged and click "Run".<br><br>
 9. You'll be prompted to a page showing a table with all your recent BLAST tickets (currently running, failed or completed). The progression of the ticket gets automatically refreshed every 10 seconds until fully completed. The icons on the right can be used to download the results of a ticket, edit and resubmit the ticket, share the ticket via URL or delete the ticket. Click the View results link to see the results.<br><br>
-10. You're now on the Results page for your run. Follow the links in the results table to get:  
-- Genomic location: shows the BLAST hit on the Region in detail view in the Location tab of the Genome Browser. The BLAST hit will appear as a red bar along the genome. You may want to click on the red bar to view a summary of the search, including E-Value, %ID, etc.
-- Sequence: shows the genomic sequence or query sequence
+10. You're now on the Results page for your run. Follow the links in the results table to get:<br>
+- Genomic location: shows the BLAST hit on the Region in detail view in the Location tab of the Genome Browser. The BLAST hit will appear as a red bar along the genome. You may want to click on the red bar to view a summary of the search, including E-Value, %ID, etc.<br>
+- Sequence: shows the genomic sequence or query sequence<br>
 - Alignment: shows the BLAST alignment<br><br>
 11. According to the results, it looks like our query protein is very similar to three S. haematobium proteins: MS3_0018943, MS3_0018942 and MS3_0018941. The fourth hit, MS3_0018947 has a quite high E-value and low %ID making it probably a false match.
 </details>
