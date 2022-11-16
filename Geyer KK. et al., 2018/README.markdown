@@ -2163,7 +2163,7 @@ Smp_104030<br>
 Are there any gene ontology terms relevant to our research?
 
 Here's the GO enrichment analysis top results for the downregulated genes from our researchers:
-
+![Table 1. Gene Ontology (GO) analysis of differentially expressed genes (DEGs).](.images/Screenshot 2022-11-16 at 09.15.44.png)
 
 
 Do our results match their results? Why?
