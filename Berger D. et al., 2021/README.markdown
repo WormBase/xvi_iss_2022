@@ -70,55 +70,55 @@ The researchers had to download The *S. mansoni* reference genome from WormBase 
 #### Task 1a: Browse the genome list of WormBase ParaSite and S. mansoni genome statistics.
 
 1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
-2. Click ”Genome List" at the top menu.
-    This page lists all current genome assemblies in WormBase ParaSite. Information included about each are: data provider, assembly name, assembly id (linked to ENA), BioProject ID, clade and Genome Browser links.
+2. Click ”Genome List" at the top menu.<br>
+This page lists all current genome assemblies in WormBase ParaSite. Information included about each are: data provider, assembly name, assembly id (linked to ENA), BioProject ID, clade and Genome Browser links.<br><br>
 3. Use the Show/hide column at the top of the table to display more genome statistics for each genome.<br><br>
-4. Hover your mouse pointer over the BUSCO ANNOTATION and BUSCO ASSEMBLY pie charts to reveal the BUSCO metrics for each genome.<br><br>
-For the listed genomes, annotation/assembly metrics are also displayed:
-
-
-
-
-Read more about interpreting BUSCO scores [here](https://busco.ezlab.org/busco_userguide.html#interpreting-the-results
-
-5. Click on Schistosoma mansoni to open its genome landing page.<br><br>
-
+4. Click on Schistosoma mansoni to open its genome landing page.<br>
 The genome page has useful summary information about the species and the assembly. You can see a summary of the methods used to produce the assembly and the annotation, and links to the publication describing it in more detail (where this is available).
 
 6. Look now at the ‘Assembly statistics’ box.
-
-The information in this box tells us about two metrics related to the quality of the assembly: contiguity and completeness. 
-
+The information in this box tells us about two metrics related to the quality of the assembly: contiguity and completeness.<br><br>
 **Contiguity**<br>
-Contiguity describes how many scaffolds a genome is represented by: in a perfectly contiguous reference genome, the number of scaffolds would be equal to the number of chromosomes. 
+Contiguity describes how many scaffolds a genome is represented by: in a perfectly contiguous reference genome, the number of scaffolds would be equal to the number of chromosomes.<br><br>
+Contiguity is described by several values, including the **total number of scaffolds in the assembly**, **the length of the longest scaffold**, the **N50 length** and the **N90 length**. If all of the scaffolds of the assembly were lined up in order of longest to shortest, the N50 length is the length of the shortest contig for which longer and equal length contigs cover at least 50 % of the assembly. <ins>For a given genome, a larger N50 length generally indicate a more contiguous assembly</ins>.<br><br>
+**Completeness**<br>
+BUSCO is a tool to assess completeness of genome assembly (BUSCO ASSEMBLY) and gene set (BUSCO ANNOTATION). It is based on the principle that some genes are so highly conserved across eukaryotic species that they should be present in any genome assembly, in single copy. <ins>Generally speaking, a higher percentage of single BUSCO genes, indicates a higher quality assembly</ins>. A word of warning though: BUSCO scores can be misleading for certain taxonomic groups. Although the genes are selected because they are supposed to be universally conserved, this is not always the case. Platyhelminth genomes tend to have lower BUSCO scores; this is not necessarily because the genomes are lower quality, but because some highly conserved eukaryotic genes are truly absent from this group of organisms.
 
-How to measure Contiguity?
+Learn more about our widget [here](https://parasite.wormbase.org/info/Browsing/assembly_quality.html).
 
-Contiguity is described by several values, including the **total number of scaffolds in the assembly**, **the length of the longest scaffold**, the **N50 length** and the **N90 length**. If all of the scaffolds of the assembly were lined up in order of longest to shortest, the N50 length is the length of the scaffold at the midpoint. Similarly, the N90 length is the length of the scaffold at the 90th percentile. <ins>For a given genome, a larger N50 length and N90 length generally indicate a more contiguous assembly</ins>.
+7. Mouse over the widget to explore the number of scaffolds of the S. mansoni genome. Note down the N50 length, and the BUSCO scores.<br><br>
+You should see that:<br>- The assembly comprises of 12 scaffolds.<br>- The N50 length is 45.7 Mb and it's the length of the 4th scaffold.<br>- BUSCO annotation completeness is 81.6%.<br>- BUSCO assembly completeness is 72.9%.
 
-
-
-- BUSCO score: BUSCO is a tool to assess completeness of genome assembly (BUSCO ASSEMBLY), gene set (BUSCO ANNOTATION) and transcriptome. It is based on the concept of single-copy orthologs that should be highly conserved among the closely related species. For example, users who wish to study the completeness of a mammalian genome assembly will use single-copy orthologs discovered among mammalian species.
-
-- N50: It's the length of the shortest contig for which longer and equal length contigs cover at least 50 % of the assembly. People generally view larger N50 values as indicative measures of better assemblies.
-
-There you can find information about the genome and useful assembly/annotation statistics.<br><br>
----
-</details>
+8. Go back to the Genome List. Find out which *schistosoma* genome has the best BUSCO ANNOTATION score after *S. mansoni*.
+You can hover your mouse over the pie chart in the BUSCO ANNOTATION or BUSCO ASSEMBLY pie chart to reveal the statistics. It looks like *S. japonicum* with PRJNA520774 BioProject ID has the best BUSCO scores after *S. mansoni*.
 
 #### Task 1b: Download S. mansoni's reference genome from WormBase ParaSite.
 
-<details closed>
-<summary>Solution</summary>
-You can download data from WormBase ParaSite using our Downloads page (https://parasite.wormbase.org/ftp.html)<br><br>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/)<br><br>
-2. Click "Downloads" at the top menu.<br><br>
-3. In the middle of the page you can find a table with genomes and their FTP links. Search for "mansoni" in the filter text box at the top right corner of the table.<br><br>
-5. You can use the links appeared for S. mansoni to download the files you need.<br><br>
-6. To download the reference genome click on the FASTA button under the "Genomic" column for S. mansoni and a download will automatically start.<br><br>
+Usually, many users, like our researchers, want to download the data for their genome-of-interest in various different formats, to perform their own analyses. WormBase ParaSite is a data hub and offers a number of compressed downloads for each species.
 
-Alternatively, you can directly browse our FTP server here: https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/
-</details>
+File formats available:
+
+- FASTA: The FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. Read more [here](https://www.ncbi.nlm.nih.gov/genbank/fastaformat/).
+- GFF: GFF is a standard file format for storing genomic features in a text file. GFF files are plain text, 9 column, tab-delimited files, frequently used for the representation of the gene features of a genome. Read more [here](https://www.ensembl.org/info/website/upload/gff3.html).
+- GAF: GAFs are tab-delimited plain text files, where each line in the file represents a single association between a gene product and an ontology term (Gene Ontology, Phenotype, etc), with an evidence code, the reference to support the link between them, and other information.
+
+You can download data from WormBase ParaSite using our Downloads page (https://parasite.wormbase.org/ftp.html)
+
+
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/)
+
+2. Click "Downloads" at the top menu.
+
+3. In the middle of the page you can find a table with genomes and their FTP links. Search for "mansoni" in the filter text box at the top right corner of the table.
+
+5. You can use the links appeared for *S. mansoni* to download the files you need. Which file would you download to perform whole genome sequencing alignment, as our researchers did?<br>Generally speaking, it's recommended to use unmasked reference genomes builds for alignment. That means, <ins>we should download and use the FASTA file linked under the "Genomic" column of the table<\ins>.
+
+6. Click the FASTA button under the "Genomic" column for S. mansoni and a download will automatically start.
+
+7. An alternative way to browse your downloads, is to directly browse our FTP server here: https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/
+
+
+
 
 ---
 ### Gene pages
