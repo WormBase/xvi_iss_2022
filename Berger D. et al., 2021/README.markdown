@@ -63,11 +63,11 @@ They collected samples from regions in Uganda with different exposure to praziqu
 
 Let's try to follow the same steps that these researchers used to perform their analysis using WormBase ParaSite.
 
-## Task 1: Browse and Download *S. mansoni*'s reference genome from WormBase ParaSite
+## WormBase ParaSite Genome Browsing and Downloads
 
 The researchers had to download The *S. mansoni* reference genome from WormBase Parasite to perform their genomic analyses.
 
-#### Task 1a: Browse the genome list of WormBase ParaSite and S. mansoni genome statistics.
+### Task 1: Browse the genome list of WormBase ParaSite and S. mansoni genome statistics.
 
 1. Go to WormBase ParaSite (https://parasite.wormbase.org/).
 ![](figures/home.png)
@@ -81,10 +81,11 @@ This page lists all current genome assemblies in WormBase ParaSite. Information 
 ![](figures/genome_list_mansoni.png)
 
 The genome page has useful summary information about the species and the assembly. You can see a summary of the methods used to produce the assembly and the annotation, and links to the publication describing it in more detail (where this is available).
-
+![](figures/mansoni_genome.png)
 
 6. Look now at the ‘Assembly statistics’ box.
-The information in this box tells us about two metrics related to the quality of the assembly: contiguity and completeness.<br><br>
+The information in this box tells us about two metrics related to the quality of the assembly: contiguity and completeness.
+![](figures/assembly_stats.png)<br>
 **Contiguity**<br>
 Contiguity describes how many scaffolds a genome is represented by: in a perfectly contiguous reference genome, the number of scaffolds would be equal to the number of chromosomes.<br><br>
 Contiguity is described by several values, including the **total number of scaffolds in the assembly**, **the length of the longest scaffold**, the **N50 length** and the **N90 length**. If all of the scaffolds of the assembly were lined up in order of longest to shortest, the N50 length is the length of the shortest contig for which longer and equal length contigs cover at least 50 % of the assembly. <ins>For a given genome, a larger N50 length generally indicate a more contiguous assembly</ins>.<br><br>
@@ -95,11 +96,13 @@ Learn more about our widget [here](https://parasite.wormbase.org/info/Browsing/a
 
 7. Mouse over the widget to explore the number of scaffolds of the S. mansoni genome. Note down the N50 length, and the BUSCO scores.<br><br>
 You should see that:<br>- The assembly comprises of 12 scaffolds.<br>- The N50 length is 45.7 Mb and it's the length of the 4th scaffold.<br>- BUSCO annotation completeness is 81.6%.<br>- BUSCO assembly completeness is 72.9%.
+![](figures/assembly_stats_n50.png)
 
 8. Go back to the Genome List. Find out which *schistosoma* genome has the best BUSCO ANNOTATION score after *S. mansoni*.
 You can hover your mouse over the pie chart in the BUSCO ANNOTATION or BUSCO ASSEMBLY pie chart to reveal the statistics. It looks like *S. japonicum* with PRJNA520774 BioProject ID has the best BUSCO scores after *S. mansoni*.
+![](figures/japonicum_busco.png)
 
-#### Task 1b: Download S. mansoni's reference genome from WormBase ParaSite.
+### Task 2: Download S. mansoni's reference genome from WormBase ParaSite.
 
 Usually, many users, like our researchers, want to download the data for their genome-of-interest in various different formats, to perform their own analyses. WormBase ParaSite is a data hub and offers a number of compressed downloads for each species.
 
@@ -116,77 +119,143 @@ You can download data from WormBase ParaSite using our Downloads page (https://p
 
 2. Click "Downloads" at the top menu.
 
-3. In the middle of the page you can find a table with genomes and their FTP links. Search for "mansoni" in the filter text box at the top right corner of the table.
+3. In the middle of the page you can find a table with genomes and their FTP links.
+![](figures/downloads_main.png)
 
-5. You can use the links appeared for *S. mansoni* to download the files you need. Which file would you download to perform whole genome sequencing alignment, as our researchers did?<br>Generally speaking, it's recommended to use unmasked reference genomes builds for alignment. That means, <ins>we should download and use the FASTA file linked under the "Genomic" column of the table<\ins>.
+4. Search for "mansoni" in the filter text box at the top right corner of the table.
 
+5. You can use the links appeared for *S. mansoni* to download the files you need. Which file would you download to perform whole genome sequencing alignment, as our researchers did?<br>Generally speaking, it's recommended to use unmasked reference genomes builds for alignment. That means, <ins>we should download and use the FASTA file linked under the "Genomic" column of the table.
+![](figures/mansoni_download_fasta.png)
+  
 6. Click the FASTA button under the "Genomic" column for S. mansoni and a download will automatically start.
 
 7. An alternative way to browse your downloads, is to directly browse our FTP server here: https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/
 
-
-
-
----
-### Gene pages
-The researchers write: "The strongest signals of selection were detected within chromosome 2 regions ... Within one of these regions we identified a single locus (47.06–47.34 Mb) containing four sodium/potassium/calcium exchanger proteins (Smp_170450, Smp_336070, Smp_328710, Smp_094390) ... ".
+## WormBase ParaSite: Gene pages
+  
+Researchers write: "The strongest signals of selection were detected within chromosome 2 regions ... Within one of these regions we identified a single locus (47.06–47.34 Mb) containing four sodium/potassium/calcium exchanger proteins (Smp_170450, Smp_336070, Smp_328710, Smp_094390) ... ".
 
 After they discovered these important genes, researchers might want to investigate some basic information about their function, location, sequences etc. WormBase ParaSite's gene pages contain all these information that the researchers might find useful.
 
-#### Task 2: Navigate to the gene page of one of the genes mentioned by the researchers. Try to find information about the gene's function, transcripts, its UniProt ID and its genomic/protein sequences.
+Through the following tasks, we're going to navigate to the gene page of one of the genes mentioned by the researchers (Smp_170450) and find information about the gene's function, transcripts, its UniProt ID, its genomic/protein sequences and more!
 
-#### Task 2a: Find general gene information (name, description, how many transcripts etc).
-<details closed>
-<summary>Solution</summary>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
-2. Paste the Gene ID (i.e. Smp_336070) in the search box at the top right corner of the page and press Enter.<br><br>
-3. The search will return the gene entry you searched for. Click on the Gene ID to open up the corresponding gene page.<br><br>
-4. You're on the gene page. Use the menu on your left to navigate.<br><br>
-</details>
-You can learn more about the gene pages here (https://parasite.wormbase.org/info/Browsing/gene_pages.html).<br><br>
+#### Task 3: Find general gene information (name, description, how many transcripts etc).
 
-#### Task 2b: Use the “Region in detail” to visualise the gene in our genome browser. Do the same with Jbrowse.
-<details closed>
-<summary>Solution</summary>
-1. While on the gene page, click on the "Region in detail" button under the "Genomic context" header.<br><br>
-2. You can now browse the gene's location using the genomic browser. Use your mouse to navigate around the gene and hover over different features of the gene to see more information.<br><br>
-3. Reverse strand is visible while UTRs are also annotated.<br><br>
-4. You can use the "Configure tracks" button at the top left of the browser to load more tracks in the view.<br><br>
-5. You can use "Add RNAseq tracks" or "Add custom tracks".<br><br>
-6. You can learn more about the Genome Browser here (https://parasite.wormbase.org/info/Browsing/genome_browser_ensembl.html).<br><br>
-<br>
-Using Jbrowse:<br>
-7. Click on the top-right "View region in Jbrowse" button to visualise the same region in a different genome browser called Jbrowse.<br><br>
-8. You are being redirected to Jbrowse. When Jbrowse loads use your mouse to navigate around the gene and find nearby genes. Click on the gene models to see more information.<br><br>
-9. Use the "Select tracks" at the top-left of the browser and select a few tracks to add to the view.<br><br>
-10. You can also load your own tracks by clicking "Track"->"Open track file or URL" from the top menu.<br><br>
-11. To learn more about Jbrowse visit our help page here (https://parasite.wormbase.org/info/Browsing/genome_browser_jbrowse.html).<br><br>
+Our researchers would be interested in finding general information about the gene.
 
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).
+
+2. Paste the Gene ID (Smp_170450) in the search box at the top right corner of the page and press Enter.
+![](figures/search_box.png)
+
+3. The search will return the gene entry you searched for. Click on the Gene ID to open up the corresponding gene page.
+![](figures/search_results.png)
+  
+4. You're on the gene page. Use the menu on your left to navigate.
+![](figures/gene_page.png)  
+
+You can learn more about the gene pages here (https://parasite.wormbase.org/info/Browsing/gene_pages.html).
+
+#### Task 4: Use the “Region in detail” to visualise the gene in our genome browser. Do the same with Jbrowse.
+
+It's quite useful for our researchers to visualise the gene model. This way they can learn more about gene's structure and gather information about the wider genomic regions (chromosomal position, nearby genes etc).
+  
+1. While on the gene page, click on the "Region in detail" button under the "Genomic context" header.
+  
+2. You can now browse the gene's location using the genomic browser. Use your mouse to navigate around the gene and hover over different features of the gene to see more information.<br>![](figures/region_in_details.png)<br> Here, each of the three boxes gives us an increasingly zoomed-in view of the gene’s genomic position. The top box shows the whole scaffold, and the middle box below it shows a zoomed-in part of the scaffold. The bottom box shows us the structure of the gene model.<br><br>We can see that:<br>(a) the gene is on the reverse strand - you can see this from the ‘<’ symbol located next to the gene name in the protein coding genes track.<br>(b) the gene has 9 exons in total. Both 5' and 3' UTRs (untranslated regions) are annotated.
+  
+4. You can use the "Configure tracks" button at the top left of the browser to load more tracks in the view.
+  
+5. You can use "Add RNAseq tracks" or "Add custom tracks".
+
+6. You can learn more about the Genome Browser here (https://parasite.wormbase.org/info/Browsing/genome_browser_ensembl.html).
+  
+Using Jbrowse:
+
+7. Click on the top-right "View region in Jbrowse" button to visualise the same region in a different genome browser called Jbrowse.
+![](figures/open_jbrowse.png)    
+
+8. You are being redirected to Jbrowse. When Jbrowse loads use your mouse to navigate around the gene and find nearby genes. Click on the gene models to see more information.
+![](figures/jbrowse.png)      
+
+9. Use the "Select tracks" at the top-left of the browser and select a few tracks to add to the view.
+
+10. You can also load your own tracks by clicking "Track"->"Open track file or URL" from the top menu.
+
+11. To learn more about Jbrowse visit our help page here (https://parasite.wormbase.org/info/Browsing/genome_browser_jbrowse.html).
+  
 Tip: Jbrowse is also accessible via a button in [WormBase ParaSite genome list](https://parasite.wormbase.org/species.html) and the [genome's landing page](https://parasite.wormbase.org/Schistosoma_mansoni_prjea36577).
-</details>
+ 
+12. Return back to the gene page for Smp_170450.
 
-#### Task 2c: Find the genomic/protein sequence for this gene.
-<details closed>
-<summary>Solution</summary>
-1. While on the gene page, click the "Sequence" on the left "Gene-based displays" menu.<br><br>
-2. Scroll down and you will see the "Marked-up sequence" for this gene. This is the genomic sequence for this gene. You can download it or Blast it using the buttons above the sequence.<br><br>
-3. Similarly, to find its protein sequence you need to first go to a gene's trascript page. To do that, click on a trascript ID in the trascript table (above the "Marked-up sequence" header).<br><br>
-4. You can then use the left "Transcript-based displays" menu to view the sequences of the Exons, cDNA and Protein for this transcript.<br><br>
-</details>
+### Task 5: Find the genomic/protein sequence for this gene.
 
-#### Task 2d: Explore the protein domains, features and AlphaFold 3D model of the encoded protein.
-<details closed>
-<summary>Solution</summary>
-1. Information about protein domains & features are available at the transcript page. To go to a transcript page you need to click on a transcript ID in the transcript table.<br><br>
-2. On the left "Transcript-based displays" menu, click on "Domains & features".<br><br>
-3. Use the tables to discover which domains and features have been annotated in this gene's protein.<br><br>
-4. On the left "Transcript-based displays" menu, click on the "AlphaFold predicted model".<br><br>
-5. Use the "AlphaFold predicted model" widget to discover the 3D protein structure of the protein.<br><br>
-6. Use your mouse (drag/drop) to move and rotate the protein. You can zoom/unzoom using your mouse wheel.<br><br>
-7. Use the right side menu to show/hide different protein/gene features (e.g. "Exons","PANTHER","Pfam" etc).
-</details>
+Researchers would also be interested in getting the different types of sequences that are available for the transcript of this gene.
+  
+**As well as gene pages, WormBase ParaSite has a page for each transcript that a gene produces. In this case, only one transcript isoform has been annotated.**
 
-#### Task 2e: Find orthologues for this gene in other Schistosoma species.
+1. While on the gene page, click the transcript ID in the transcipt table to navigate to the transcript page.
+
+2. Again using the navigation menu on the left hand side of the page, we can retrieve three main types of information on the transcript: sequences, information about the protein domains, and external references.
+  
+3. Click “Exons”, “cDNA” and “Protein” in the “Sequence” section of the navigation menu to see the different types of sequence that are available for the transcript.
+
+The “Exons” tab displays the sequence of individual exons in a table (useful if you’re interested in retrieving, say, only the sequence of exon 2); the “cDNA” tab has the cDNA sequence (the sequence you would get if you reverse transcribed mature mRNA); and the “Protein” tab has the amino acid sequence. All of the sequences can be downloaded in FASTA format. As well as the sequences displayed in the browser, you can also choose to download, for example, genomic sequence, just UTRs etc.
+ 
+4. Return back to the gene page for Smp_170450.
+
+---
+  
+Ok! Now, our researchers have gathered general information about the genes they're interested in. They have also inspected their structure and sequence. However, they don't have any clues about the genes' function! What do these genes and their encoded proteins do?
+  
+Functional annotation tries to answer this question!
+
+### Task 6: Functional annotation: Explore the Gene Ontology terms associated with this gene
+A fast way to find out about the function of a gene’s product is to see which Gene Ontology (GO) terms have been associated with it.
+  
+Gene ontology is a formal representation of knowledge about a gene with respect to three aspects: Molecular Function, Cellular Component and Biological Process. Cellular Component GO terms describe where a protein is localised (in the membrane, extracellular, in the nucleus etc). Molecular Function GO terms describe the biochemical activity of the protein. Biological Process GO terms describe the pathways and broader processes that the protein contributes to.
+ 
+1. Gene Ontology information is available at the gene page level. While on the gene page, click "Biological process" or "Cellular Component" or "Molecular Function" from the Gene ontology section of the navigation menu.
+  
+2. A table appears with information about the Gene Ontology terms that have been associated with this gene. You can click on the link under the "Accession" column to find more about each Gene Ontology term. 
+  
+According to these results, it looks like Smp_170450, that according to our researchers might play a role in PZQ resistance, is associated with transmembrane transport and calcium ion transport. Would this information be useful to our researchers? PZQ disrupts calcium ion homeostasis in the worm, so the fact that our gene is associated with calcium transport is a really important piece of information.
+
+### Task 7: Functional annotation: Explore protein domains
+
+Apart from Gene Ontology, the domains on the encoded protein might give us even more information about the function of the gene.
+  
+How we do go from a string of amino acids to predicting what this protein might do in the cell? This is where another type of database comes in: protein family databases. For the vast majority of predicted protein sequences, nobody will have done experiments to test what its function is. However, we can use the principle of homology to take proteins that are well-studied in one experimental system and infer that proteins of similar sequence in other organisms are likely to have similar structure, and therefore similar function. In reality, protein sequences are analysed in terms of domains: these are subsequences of a protein that have a defined tertiary structure or sequence motif, conferring a defined function. A protein can consist of several domains. When comparing proteins between organisms, often the region encoding a protein domain is highly conserved whilst the bit that connects different domains together is more divergent.
+
+A well known example of a protein domain database is Pfam. Pfam uses multiple sequence alignments of the known proteins with a certain domain to capture a representative model (a profile Hidden Markov Model) of that domain. Other protein domain databases, that might use slightly different methods to define domains, are: CATH, CDD, HAMAP, MobiDB Lite, Panther, PIRSF, PRINTS, Prosite, SFLD, SMART, SUPERFAMILY and TIGRfams. Luckily for us, all of these databases are united under the InterPro consortium .
+ 
+1. Information about protein domains & features are available at the transcript page. To go to a transcript page you need to click on a transcript ID in the transcript table.
+  
+2. On the left "Transcript-based displays" menu, click on "Domains & features".
+
+3. Use the tables to discover which domains and features have been annotated in this gene's protein.
+  
+According to the results, the domains in the encoded protein have to do with ion-binding and membrane exchange, agreeing with the Gene Ontology data for this gene.
+  
+### Task 8: Functional Annotation: Explore phenotypes experimentally associated with this gene
+
+Since release 16, WormBase ParaSite 
+
+1. While on the gene page, click "Phenotypes" on the left "Gene-based displays" menu.<br><br>
+2. We need to wait a little bit for the phenotypes to load.<br><br>
+3. When loaded, two tables are visible: "Phenotypes associated with this gene" and "Phenotype, disease and trait annotations associated orthologues of this gene in other species".<br><br>
+4. In the first "Phenotypes associated with this gene" table, you can find a list of phnoetypes, diseases and traits associated directly with this gene for this species, based on experimental evidence. If there are no associate phenotypes for your gene in the first table, a message showing "None Found" will be displayed. You can try and work with a different gene (i.e. Smp_025260) which has phenotype associations. Literature evidence for each association can be found under the "Study" column.<br><br>
+5. The second table shows phenotype, disease and trait annotations associated orthologues of this gene in other species. Usually, there are not many phenotypic data available for parasitic worms, for this reason exploring phenotypes associated with other species like **C. elegans** is really useful for scientists. You can use the links in the table to navigate to the orthologous gene in the other species and find more information there.<br><br>
+6. Gene-phenotype association links can also be found in our [Downloads FTP server](https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/). Look for the files ending in ".phenotypes.gaf.gz"  and ".orthology-inferred_phenotypes.gaf.gz".<br><br>
+</details>  
+
+---
+  
+Another approach to understanding what a gene does is comparing its sequence to other genes, both within the same genome, and across different genomes.
+  
+This analysis is called Comparative Genomics
+
+### Task 8: Comparative Genomics: Find orthologues for this gene in other species.
 
 Wait! What orthologues and paralogues are? Read [here](https://sciencing.com/different-variants-gene-called-8092322.html) and/or [here](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2001-2-8-interactions1002) to find more!
 
@@ -194,31 +263,26 @@ Wait! What orthologues and paralogues are? Read [here](https://sciencing.com/dif
 **Orthologues**: Genes which evolved from a common ancestral gene by speciation that usually have retained a similar function in different species.<br>
 **Paralogues**: Paralogs are homologous genes that arise from gene duplication events. Their common ancestry and replicated sequence often leads to similar structure and function in related pathways and protein complexes.<br>
 
+![](figures/Screenshot%202022-11-17%20at%2018.59.45.png)  
 <ins>Why would researchers want to find orthologues in other species for their gene of interest?</ins> Function Annotation! If the function of this gene in S. mansoni is not known, you can check the function of its orthologues genes in other species like C. elegans or other Schistosomas. Many times you will find that orthologous genes function will be similar to this of your gene of interest.
-
-<details closed>
-<summary>Solution</summary>
-1. While on the gene page, click "Orthologues" on the left "Gene-based displays" menu under "Comparative genomics".<br><br>
-2. We need to wait a little bit for the orthologues to load.<br><br>
-3. When loaded, two tables are visible: "Summary of orthologues of this gene" and "Selected orthologues".<br><br>
-4. On the left "Summary of orthologues of this gene" menu, you can select to display orthologues for one or more taxonomic groups (nematodes, platyhelminths)".<br><br>
-5. The second table shows the list of orthologues found for this gene.<br><br>
-6. You can use the search box at the top right to filter orthologues just for schistosoma species by typing "schistosoma".<br><br>
-7. Use the three buttons in the "Compare" column: "Alignment (protein)", "Alignment (cDNA)" and "Gene Tree (image)" to further explore the comparison.<br><br>
-8. Click on the "Gene Tree (image)" of one of the orthologues in the list, to explore the gene tree for the specific orthologue.<br><br>
-9. You can follow the same instructions to discover paralogues too!<br><br>
-</details>
-
-#### Task 2f: Explore phenotypes associated with the gene of interest.
-<details closed>
-<summary>Solution</summary>
-1. While on the gene page, click "Phenotypes" on the left "Gene-based displays" menu.<br><br>
-2. We need to wait a little bit for the phenotypes to load.<br><br>
-3. When loaded, two tables are visible: "Phenotypes associated with this gene" and "Phenotype, disease and trait annotations associated orthologues of this gene in other species".<br><br>
-4. In the first "Phenotypes associated with this gene" table, you can find a list of phnoetypes, diseases and traits associated directly with this gene for this species, based on experimental evidence. If there are no associate phenotypes for your gene in the first table, a message showing "None Found" will be displayed. You can try and work with a different gene (i.e. Smp_025260) which has phenotype associations. Literature evidence for each association can be found under the "Study" column.<br><br>
-5. The second table shows phenotype, disease and trait annotations associated orthologues of this gene in other species. Usually, there are not many phenotypic data available for parasitic worms, for this reason exploring phenotypes associated with other species like **C. elegans** is really useful for scientists. You can use the links in the table to navigate to the orthologous gene in the other species and find more information there.<br><br>
-6. Gene-phenotype association links can also be found in our [Downloads FTP server](https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/). Look for the files ending in ".phenotypes.gaf.gz"  and ".orthology-inferred_phenotypes.gaf.gz".<br><br>
-</details>
+  
+1. While on the gene page, click "Orthologues" on the left "Gene-based displays" menu under "Comparative genomics".
+  
+2. We need to wait a little bit for the orthologues to load.
+  
+3. When loaded, two tables are visible: "Summary of orthologues of this gene" and "Selected orthologues".
+  
+4. On the left "Summary of orthologues of this gene" menu, you can select to display orthologues for one or more taxonomic groups (nematodes, platyhelminths)".
+  
+5. The second table shows the list of orthologues found for this gene.
+  
+6. You can use the search box at the top right to filter orthologues for *C. elegans* by typing "elegans". What is the function of this gene's orthologue in C. elegans? It looks like its a Na/Ca exchanger protein, further supporting our hypothesis!
+  
+7. Use the three buttons in the "Compare" column: "Alignment (protein)", "Alignment (cDNA)" and "Gene Tree (image)" to further explore the comparison.
+  
+8. Click on the "Gene Tree (image)" of one of the orthologues in the list, to explore the gene tree for the specific orthologue.
+  
+9. You can follow the same instructions to discover paralogues too!
 
 #### Task 2g: Explore papers mentioning your gene of interest.
 <details closed>
@@ -311,3 +375,14 @@ Now, we need to further explore the function of these genes as we did in Task 2.
 </details>
 You can find more about BioMart [here](https://parasite.wormbase.org/info/data/biomart/index.html).
 BioMart video Tutorial [here](https://www.ensembl.org/Multi/Help/Movie?db=core;id=189).
+
+  
+  
+  
+  4. On the left "Transcript-based displays" menu, click on the "AlphaFold predicted model"
+  
+5. Use the "AlphaFold predicted model" widget to discover the 3D protein structure of the protein
+  
+6. Use your mouse (drag/drop) to move and rotate the protein. You can zoom/unzoom using your mouse wheel
+  
+7. Use the right side menu to show/hide different protein/gene features (e.g. "Exons","PANTHER","Pfam" etc).
