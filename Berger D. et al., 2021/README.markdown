@@ -69,12 +69,19 @@ The researchers had to download The *S. mansoni* reference genome from WormBase 
 
 #### Task 1a: Browse the genome list of WormBase ParaSite and S. mansoni genome statistics.
 
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).
+![](figures/home.png)
+
 2. Click ”Genome List" at the top menu.<br>
-This page lists all current genome assemblies in WormBase ParaSite. Information included about each are: data provider, assembly name, assembly id (linked to ENA), BioProject ID, clade and Genome Browser links.<br><br>
-3. Use the Show/hide column at the top of the table to display more genome statistics for each genome.<br><br>
+This page lists all current genome assemblies in WormBase ParaSite. Information included about each are: data provider, assembly name, assembly id (linked to ENA), BioProject ID, clade and Genome Browser links.
+![](figures/genome_list_pointer.png)
+3. Use the Show/hide column at the top of the table to display more genome statistics for each genome.
+![](figures/genome_list.png)
 4. Click on Schistosoma mansoni to open its genome landing page.<br>
+![](figures/genome_list_mansoni.png)
+
 The genome page has useful summary information about the species and the assembly. You can see a summary of the methods used to produce the assembly and the annotation, and links to the publication describing it in more detail (where this is available).
+
 
 6. Look now at the ‘Assembly statistics’ box.
 The information in this box tells us about two metrics related to the quality of the assembly: contiguity and completeness.<br><br>
