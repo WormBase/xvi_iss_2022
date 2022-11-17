@@ -1,18 +1,3 @@
-## The paper
-### Whole-genome sequencing of Schistosoma mansoni reveals extensive diversity with limited selection despite mass drug administration
-#### Duncan J. Berger, Thomas Crellen, Poppy H. L. Lamberton, Fiona Allan, Alan Tracey, Jennifer D. Noonan, Narcis B. Kabatereine, Edridah M. Tukahebwa, Moses Adriko, Nancy Holroyd, Joanne P. Webster, Matthew Berriman & James A. Cotton
----
-Control and elimination of the parasitic disease schistosomiasis relies on mass administration of praziquantel. Whilst these programmes reduce infection prevalence and intensity, their impact on parasite transmission and evolution is poorly understood. Here we examine the genomic impact of repeated mass drug administration on *Schistosoma mansoni* populations with documented reduced praziquantel efficacy. We sequenced whole-genomes of 198 *S. mansoni* larvae from 34 Ugandan children from regions with contrasting praziquantel exposure. Parasites infecting children from Lake Victoria, a transmission hotspot, form a diverse panmictic population. A single round of treatment did not reduce this diversity with no apparent population contraction caused by long-term praziquantel use. We find evidence of positive selection acting on members of gene families previously implicated in praziquantel action, but detect no high frequency functionally impactful variants. As efforts to eliminate schistosomiasis intensify, our study provides a foundation for genomic surveillance of this major human parasite.
-
-## Using WormBase ParaSite
-
-In this paper, the researchers examine the genomic impact of repeated mass drug administration on *Schistosoma mansoni* populations with documented reduced praziquantel efficacy.
-
-They collected samples from regions in Uganda with different exposure to praziquantel and performed whole genome sequencing to explore how schistosome populations change in response to repeated MDA as well as to monitor for the potential emergence and spread of praziquantel resistance.
-
-Let's try to follow the same steps that these researchers used to perform their analysis using WormBase ParaSite.
----
-
 ## Genes and Genomes  <a name="genes_and_genomes"></a>
 
 Throughout this course, we assume that you're familiar with genes and genomes. 
@@ -53,21 +38,71 @@ INSDC stores both primary data (i.e. the sequence reads exactly as they come off
 
 An AGP file is often also provided, describing how the contigs fit together as scaffolds, and how the scaffolds fit together as chromosomes. A genome project may also contain an annotation file in GFF format (more on this file format later). This file contains predicted gene structures: based on the genome sequence, certain algorithms can predict which regions encode genes. An example of a commonly-used gene prediction tools is [BRAKER](https://github.com/Gaius-Augustus/BRAKER). These predictions may or may not be guided by other types of evidence, such as RNA sequencing data. It is important to bear in mind that the majority of genes as they appear in the sequence databases (and also in WormBase ParaSite) are based on predictions: these predictions are driven by evidence, but most genes from helminth genome assemblies are unlikely to have been cloned and sequenced in their entirety. We'll look at an example of checking how well a gene model is supported by RNAseq evidence in the next WormBase ParaSite module.
 
+**WormBase ParaSite takes sequence data from INSDC (a genome assembly and a set of gene predictions) and adds additional analyses that assist scientists in interpreting and querying this data. In this part of the module we will explore the basic functionality of the website for looking at helminth genes and genomes.**
+
+---
+
+# Practical Session I
+
+In this practical session we will step into the shoes of real-world researchers trying to examine the genomic impact of mass drug administration of an anti-parasitic drug on *Schistosoma mansoni*. We will try to replicate parts of their methodology using WormBase ParaSite.
+
+## The study
+
+### Whole-genome sequencing of Schistosoma mansoni reveals extensive diversity with limited selection despite mass drug administration
+#### Duncan J. Berger, Thomas Crellen, Poppy H. L. Lamberton, Fiona Allan, Alan Tracey, Jennifer D. Noonan, Narcis B. Kabatereine, Edridah M. Tukahebwa, Moses Adriko, Nancy Holroyd, Joanne P. Webster, Matthew Berriman & James A. Cotton
+
+Control and elimination of the parasitic disease schistosomiasis relies on mass administration of praziquantel. Whilst these programmes reduce infection prevalence and intensity, their impact on parasite transmission and evolution is poorly understood. Here we examine the genomic impact of repeated mass drug administration on *Schistosoma mansoni* populations with documented reduced praziquantel efficacy. We sequenced whole-genomes of 198 *S. mansoni* larvae from 34 Ugandan children from regions with contrasting praziquantel exposure. Parasites infecting children from Lake Victoria, a transmission hotspot, form a diverse panmictic population. A single round of treatment did not reduce this diversity with no apparent population contraction caused by long-term praziquantel use. We find evidence of positive selection acting on members of gene families previously implicated in praziquantel action, but detect no high frequency functionally impactful variants. As efforts to eliminate schistosomiasis intensify, our study provides a foundation for genomic surveillance of this major human parasite.
+
+---
+
+In this paper, the researchers examine the genomic impact of repeated mass drug administration on *Schistosoma mansoni* populations with documented reduced praziquantel efficacy.
+
+They collected samples from regions in Uganda with different exposure to praziquantel and performed whole genome sequencing to explore how schistosome populations change in response to repeated MDA as well as to monitor for the potential emergence and spread of praziquantel resistance.
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-021-24958-0/MediaObjects/41467_2021_24958_Fig1_HTML.png?as=webp)
+
+Let's try to follow the same steps that these researchers used to perform their analysis using WormBase ParaSite.
+
+## Task 1: Browse and Download *S. mansoni*'s reference genome from WormBase ParaSite
+
 The researchers had to download The *S. mansoni* reference genome from WormBase Parasite to perform their genomic analyses.
-
-But what 
-
-#### Task 1: Browse and Download *S. mansoni*'s reference genome from WormBase ParaSite
 
 #### Task 1a: Browse the genome list of WormBase ParaSite and S. mansoni genome statistics.
 
-<details closed>
-<summary>Solution</summary>
 1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
-2. Click ”Genome List" at the top menu.<br><br>
+2. Click ”Genome List" at the top menu.
+    This page lists all current genome assemblies in WormBase ParaSite. Information included about each are: data provider, assembly name, assembly id (linked to ENA), BioProject ID, clade and Genome Browser links.
 3. Use the Show/hide column at the top of the table to display more genome statistics for each genome.<br><br>
 4. Hover your mouse pointer over the BUSCO ANNOTATION and BUSCO ASSEMBLY pie charts to reveal the BUSCO metrics for each genome.<br><br>
-5. Click on Schistosoma mansoni to open its genome landing page. There you can find information about the genome and useful assembly/annotation statistics.<br><br>
+For the listed genomes, annotation/assembly metrics are also displayed:
+
+
+
+
+Read more about interpreting BUSCO scores [here](https://busco.ezlab.org/busco_userguide.html#interpreting-the-results
+
+5. Click on Schistosoma mansoni to open its genome landing page.<br><br>
+
+The genome page has useful summary information about the species and the assembly. You can see a summary of the methods used to produce the assembly and the annotation, and links to the publication describing it in more detail (where this is available).
+
+6. Look now at the ‘Assembly statistics’ box.
+
+The information in this box tells us about two metrics related to the quality of the assembly: contiguity and completeness. 
+
+**Contiguity**<br>
+Contiguity describes how many scaffolds a genome is represented by: in a perfectly contiguous reference genome, the number of scaffolds would be equal to the number of chromosomes. 
+
+How to measure Contiguity?
+
+Contiguity is described by several values, including the **total number of scaffolds in the assembly**, **the length of the longest scaffold**, the **N50 length** and the **N90 length**. If all of the scaffolds of the assembly were lined up in order of longest to shortest, the N50 length is the length of the scaffold at the midpoint. Similarly, the N90 length is the length of the scaffold at the 90th percentile. <ins>For a given genome, a larger N50 length and N90 length generally indicate a more contiguous assembly</ins>.
+
+
+
+- BUSCO score: BUSCO is a tool to assess completeness of genome assembly (BUSCO ASSEMBLY), gene set (BUSCO ANNOTATION) and transcriptome. It is based on the concept of single-copy orthologs that should be highly conserved among the closely related species. For example, users who wish to study the completeness of a mammalian genome assembly will use single-copy orthologs discovered among mammalian species.
+
+- N50: It's the length of the shortest contig for which longer and equal length contigs cover at least 50 % of the assembly. People generally view larger N50 values as indicative measures of better assemblies.
+
+There you can find information about the genome and useful assembly/annotation statistics.<br><br>
 ---
 </details>
 
