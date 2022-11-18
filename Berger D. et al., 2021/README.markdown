@@ -354,7 +354,7 @@ AlphaFold, the state-of-the-art AI system developed by DeepMind, is able to comp
 
 6. You can use click on any Amino-Acid residue and the widget will zoom in on this residue in the protein model.
 
-7. Take a note of the AlphaFold accession ID.
+7. Take a note of the AlphaFold accession ID, in our case it's: AF-G4VDQ6-F1
 
 8. Go to https://alphafold.ebi.ac.uk/ and insert the accession ID from step 7 on the search bar. Click search.
 ![](figures/af_search.png)
