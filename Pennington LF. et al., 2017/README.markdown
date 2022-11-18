@@ -1,3 +1,20 @@
+# WormBase ParaSite Tools - BLAST
+
+BLAST stands for "Basic Local Alignment Search Tool (BLAST)". BLAST finds regions of local similarity between sequences. The program compares nucleotide or protein sequences to sequence databases and calculates the statistical significance of matches. BLAST can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families.
+
+![](https://thebiologynotes.com/wp-content/uploads/2022/07/Basic-Local-Alignment-Search-Tool-BLAST.jpg)
+
+When do we need to use it?
+
+- Discovering new genes or proteins: Imagine that you have sequenced an S. mansoni gene that is associated with drug resistance. You know part of the DNA sequence, but you do not know which gene it belongs to. You can use WormBase ParaSite's BLAST to see if any genes correspond to your sequence!
+- Discovering variants of genes or proteins: Imagine you have identified a new S. bovis protein which is similar but not identical to any of the  known proteins for this species. You might have found a new isoform of the encoding gene.
+- **Identifying orthologs and paralogs: You can run BLAST using a protein/gene of a species to find its paralogues or its orthologues in other species. This is what our researchers did!**
+
+
+# Practical Session II
+
+In this practical session we will step into the shoes of real-world researchers trying to examine the genomic impact of mass drug administration of an anti-parasitic drug on *Schistosoma mansoni*. We will try to replicate parts of their methodology using WormBase ParaSite.
+
 ## The paper
 ### H-IPSE Is a Pathogen-Secreted Host Nucleus-Infiltrating Protein (Infiltrin) Expressed Exclusively by the Schistosoma haematobium Egg Stage.
 #### Pennington LF, Alouffi A, Mbanefo EC, Ray D, Heery DM, Jardetzky TS, Hsieh MH, Falcone FH.
@@ -19,13 +36,7 @@ Researchers say: "To identify homologs of S. mansoni IPSE in the S. haematobium 
 
 Wait! What BLAST is?
 
-BLAST stands for "Basic Local Alignment Search Tool (BLAST)". BLAST finds regions of local similarity between sequences. The program compares nucleotide or protein sequences to sequence databases and calculates the statistical significance of matches. BLAST can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families.
 
-When do we need to use it?
-
-- Discovering new genes or proteins: Imagine that you have sequenced an S. mansoni gene that is associated with drug resistance. You know part of the DNA sequence, but you do not know which gene it belongs to. You can use WormBase ParaSite's BLAST to see if any genes correspond to your sequence!
-- Discovering variants of genes or proteins: Imagine you have identified a new S. bovis protein which is similar but not identical to any of the  known proteins for this species. You might have found a new isoform of the encoding gene.
-- **Identifying orthologs and paralogs: You can run BLAST using a protein/gene of a species to find its paralogues or its orthologues in other species. This is what our researchers did!**
 
 BLAST can be used both for DNA and protein sequences.
 
