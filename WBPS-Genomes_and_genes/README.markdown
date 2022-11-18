@@ -369,12 +369,6 @@ AlphaFold, the state-of-the-art AI system developed by DeepMind, is able to comp
 
 12. Researchers could use the structure file to perform docking simulations (https://zhanggroup.org/EDock/) against different ligands, protein structure alignment with another protein (https://zhanggroup.org/TM-align/), or explore the tools of the PDB suite (https://www.ebi.ac.uk/pdbe/pdbe-services).
 
-
-
-
-
-
-
 ---
 ### Multiple querying 
 So far we have seen how you can manually browse [WormBase ParaSite](https://parasite.wormbase.org/) by searching for genes and then navigating to their gene/transcript/protein pages. However, in many cases you might have to automatically extract information from [WormBase ParaSite](https://parasite.wormbase.org/) for multiple entries. Or simply you might need to extract information about your favourite genome's features that fullfil some criteria.<br>
@@ -412,51 +406,84 @@ SM_V9_7:13266191:13494236<br>
 SM_V9_PAR1:59785:195092<br>
 SM_V9_PAR2:36554914:36616990<br>
 
-#### Task 3: Identify all the genes that can be found in the above genomic regions using WormBase ParaSite's BioMart tool
+### Task 12: Identify all the genes that can be found in the above genomic regions using WormBase ParaSite's BioMart tool
 
-<details closed>
-<summary>Solution</summary>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
-2. Click "BioMart" at the top menu. You're now on BioMart's page! Filters and attributes can be selected in the right panel. A summary of your choices is also displayed in the left panel.<br><br>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/) and click "BioMart" at the top menu.
+![](figures/click_bm.png)
+  
+2. You're now on BioMart's page! Filters and attributes can be selected in the right panel. A summary of your choices is also displayed in the left panel.
+![](figures/biomart_panel.png)
+  
 BioMart allows you to restrict your query with information that you know, e.g: species, input a list of IDs, restrict to a region. You can access the filter page by clicking on the "1. Query Filters" button located on the left panel. Filters are organised into different sections, clicking on the "+/-" boxes will expand/collapse a section and display its content.<br><br>
-3. Expand the "SPECIES" section by clicking on the "+" box on the right panel. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.<br><br>
-4. Expand the "REGION" section by clicking on the "+" box on the right panel. Then, paste the above genomic coordinates into the "Multiple regions (Chr:Start:End:Strand)" dialog box.<br><br>
-5. Click on the "2. Output Attributes" button on the left panel.<br><br>
-By clicking on the "2. Output Attributes" button on the left panel, you will access the mart attribute page. This page allows you to select your desired output; the default output is "Genome project" and "Gene stable ID" in the WormBase ParaSite mart. The attributes are organised in pages that you can access by selecting the radio buttons at the top of the right panel.<br><br> 
-6. Expand the "SPECIES AND GENOME INFORMATION" by clicking on the "+" box on the right panel. Then deselect the "Genome project" field. We don't want it in our final table.<br><br>
-7. Expand the "GENE" section by clicking on the "+" box on the right panel. Then make sure that only the "Gene stable ID" field is selected.<br><br>
+
+3. Expand the "SPECIES" section by clicking on the "+" box on the right panel. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.
+![](figures/bm_species.png) 
+  
+4. Expand the "REGION" section by clicking on the "+" box on the right panel. Then, paste the above genomic coordinates into the "Multiple regions (Chr:Start:End:Strand)" dialog box.
+![](figures/bm_coords.png)
+
+5. Click on the "2. Output Attributes" button on the left panel.
+![](figures/bm_out.png)
+  
+By clicking on the "2. Output Attributes" button on the left panel, you will access the mart attribute page. This page allows you to select your desired output; the default output is "Genome project" and "Gene stable ID" in the WormBase ParaSite mart. The attributes are organised in pages that you can access by selecting the radio buttons at the top of the right panel.
+
+6. Expand the "SPECIES AND GENOME INFORMATION" by clicking on the "+" box on the right panel. Then deselect the "Genome project" field. We don't want it in our final table.
+![](figures/bm_osg.png)  
+  
+7. Expand the "GENE" section by clicking on the "+" box on the right panel. Then make sure that only the "Gene stable ID" field is selected.
+![](figures/bm_og.png)
+
 8. Click on the "Results" button at the top-left of the screen. This will bring you to the result page.<br><br>
-This page will, by default, show you a preview of the first 10 results of your query in HTML format. The number of results previewed and format can be changed by the View settings above the results preview table. You can also automatically remove all the duplicated results from your query by clicking on the "Unique results only" button. If you are happy with your query, you can use the "Export all results to" section at the top of the right panel to download your results.<br><br>
-9. At the top of the right panel use the dropdown menu to select: "Export all results to File" and then "TSV". Tick the "Unique results only". Then click the "Go" button. A mart_export file will be automatically downloaded. It contains a list with all the genes that exist in the genomic regions the researchers identified.<br><br>
-</details>
+This page will, by default, show you a preview of the first 10 results of your query in HTML format. The number of results previewed and format can be changed by the View settings above the results preview table. You can also automatically remove all the duplicated results from your query by clicking on the "Unique results only" button. If you are happy with your query, you can use the "Export all results to" section at the top of the right panel to download your results.
+![](figures/bm_1result.png)  
+  
+9. At the top of the right panel use the dropdown menu to select: "Export all results to File" and then "TSV". Tick the "Unique results only". Then click the "Go" button. A mart_export file will be automatically downloaded. It contains a list with all the genes that exist in the genomic regions the researchers identified.
+
 You can find more about BioMart [here](https://parasite.wormbase.org/info/data/biomart/index.html).
 BioMart video Tutorial [here](https://www.ensembl.org/Multi/Help/Movie?db=core;id=189).
 
----
-### Explore gene function with BioMart
-
+---  
+  
 Using BioMart, we managed to come up with the list of genes that might play a role in the survival following praziquantel treatment.
 
-Now, we need to further explore the function of these genes as we did in Task 2. However, now we will extract all the necessary information researchers might find useful for all genes at once, using BioMart!
+Now, we need to further explore the function of these genes as we did in Task 2. However, now we will extract all the necessary information researchers might find useful for all genes at once, using BioMart!  
+  
+### Task 13: Find out more information about the function of the genes you identified in Task 3, using WormBase ParaSite's BioMart tool
+  
+1. Go to [WormBase ParaSite](https://parasite.wormbase.org/) and 2. click "BioMart" at the top menu.
+![](figures/click_bm.png)
+  
+3. Expand the "SPECIES" section by clicking on the "+" box on the right panel. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.
+![](figures/bm_species.png)
 
-**Task 4. Find out more information about the function of the genes you identified in Task 3, using [WormBase ParaSite's BioMart tool](https://parasite.wormbase.org/biomart/martview/).**
-<details closed>
-<summary>Solution</summary>
-1. Go to [WormBase ParaSite](https://parasite.wormbase.org/)<br><br>
-2. Click "BioMart" at the top menu.<br><br>
-3. Expand the "SPECIES" section by clicking on the "+" box on the right panel. Select the "Schistosoma mansoni PRJEA36577" species in the SPECIES tab.<br><br>
-4. Expand the "GENE" section by clicking on the "+" box on the right panel. Then, paste the list of Gene IDs from Task 3 into the "ID list limit" dialog box and make sure the the tick box on the left of "Id list limit" is ticked. Similarly, tick the "Gene type" tick box and select "Protein Coding" to limit your results to protein coding genes.<br><br>
-5. Click on the "2. Output Attributes" button on the left panel.<br><br>
-6. Expand the "SPECIES AND GENOME INFORMATION" section by clicking on the "+" box on the right panel. Then deselect the "Genome project" field. We don't want it in our final table.<br><br>
-7. Expand the "GENE" section by clicking on the "+" box on the right panel. Then select "Gene stable ID", "Chromosome/scaffold name", "Gene name", "Gene description" and "Transcript count" and all other fields you believe might be useful for our research.<br><br>
-8. Expand the "EXTERNAL DATABASE REFERENCES AND ID CONVERSION" section by clicking on the "+" box on the right panel. Then select "UniProtKB/SwissProt ID".<br><br>
-9. Expand the "GENE ONTOLOGY (GO)" section by clicking on the "+" box on the right panel. Then select "GO term accession", "GO term name".<br><br>
-10. Expand the "INTERPRO PROTEIN DOMAINS" section by clicking on the "+" box on the right panel. Then select "InterPro ID", "InterPro short description".<br><br>
-11. You can also expand the "OTHER PROTEIN DOMAINS" section and select more sources if you want.<br><br>
-12. Expand the "ORTHOLOGUES" section by clicking on the "+" box on the right panel. Then navigate to the "Caenorhabditis elegans (PRJNA13758) [WS282] Orthologues" and select "Caenorhabditis elegans (PRJNA13758) [WS282] gene stable ID" and "Caenorhabditis elegans (PRJNA13758) [WS282] gene name".<br><br>
-13. Click on the "Results" button at the top-left of the screen.<br><br>
-14. At the top of the right panel use the dropdown menu to select: "Export all results to File" and then "TSV". Tick the "Unique results only". Then click the "Go" button. A mart_export file will be automatically downloaded. It contains a comma-separated file you can load in Excel and perform your desired analysis/filtering etc.<br><br>
-</details>
+4. Expand the "GENE" section by clicking on the "+" box on the right panel. Then, paste the list of Gene IDs from Task 3 into the "ID list limit" dialog box and make sure the the tick box on the left of "Id list limit" is ticked. Similarly, tick the "Gene type" tick box and select "Protein Coding" to limit your results to protein coding genes.
+![](figures/bm_2input.png)
+  
+5. Click on the "2. Output Attributes" button on the left panel.
+  
+  
+6. Expand the "SPECIES AND GENOME INFORMATION" section by clicking on the "+" box on the right panel. Then deselect the "Genome project" field. We don't want it in our final table.
+  
+7. Expand the "GENE" section by clicking on the "+" box on the right panel. Then select "Gene stable ID", "Chromosome/scaffold name", "Gene name", "Gene description" and "Transcript count" and all other fields you believe might be useful for our research.
+  
+8. Expand the "EXTERNAL DATABASE REFERENCES AND ID CONVERSION" section by clicking on the "+" box on the right panel. Then select "UniProtKB/SwissProt ID".
+  
+9. Expand the "GENE ONTOLOGY (GO)" section by clicking on the "+" box on the right panel. Then select "GO term accession", "GO term name".
+  
+ 
+10. Expand the "INTERPRO PROTEIN DOMAINS" section by clicking on the "+" box on the right panel. Then select "InterPro ID", "InterPro short description".
+![](figures/bm_2outa.png)
+  
+11. You can also expand the "OTHER PROTEIN DOMAINS" section and select more sources if you want.
+  
+12. Expand the "ORTHOLOGUES" section by clicking on the "+" box on the right panel. Then navigate to the "Caenorhabditis elegans (PRJNA13758) [WS282] Orthologues" and select "Caenorhabditis elegans (PRJNA13758) [WS282] gene stable ID" and "Caenorhabditis elegans (PRJNA13758) [WS282] gene name".
+![](figures/bm_2outb.png)
+  
+13. Click on the "Results" button at the top-left of the screen.
+![](figures/bm_2result.png)
+  
+14. At the top of the right panel use the dropdown menu to select: "Export all results to File" and then "TSV". Tick the "Unique results only". Then click the "Go" button. A mart_export file will be automatically downloaded. It contains a comma-separated file you can load in Excel and perform your desired analysis/filtering etc.
+
 You can find more about BioMart [here](https://parasite.wormbase.org/info/data/biomart/index.html).
 BioMart video Tutorial [here](https://www.ensembl.org/Multi/Help/Movie?db=core;id=189).
 
