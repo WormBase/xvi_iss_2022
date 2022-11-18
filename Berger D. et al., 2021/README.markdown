@@ -195,20 +195,27 @@ Researchers would also be interested in getting the different types of sequences
 **As well as gene pages, WormBase ParaSite has a page for each transcript that a gene produces. In this case, only one transcript isoform has been annotated.**
 
 1. While on the gene page, click the transcript ID in the transcipt table to navigate to the transcript page.
-
-2. Again using the navigation menu on the left hand side of the page, we can retrieve three main types of information on the transcript: sequences, information about the protein domains, and external references.
-  
-3. Click “Exons”, “cDNA” and “Protein” in the “Sequence” section of the navigation menu to see the different types of sequence that are available for the transcript.
+![](figures/select_tr.png)
+ 
+2. Click “Exons”, “cDNA” and “Protein” in the “Sequence” section of the navigation menu to see the different types of sequence that are available for the transcript.
+![](figures/tr.png)
 
 The “Exons” tab displays the sequence of individual exons in a table (useful if you’re interested in retrieving, say, only the sequence of exon 2); the “cDNA” tab has the cDNA sequence (the sequence you would get if you reverse transcribed mature mRNA); and the “Protein” tab has the amino acid sequence. All of the sequences can be downloaded in FASTA format. As well as the sequences displayed in the browser, you can also choose to download, for example, genomic sequence, just UTRs etc.
- 
+Exons sequences            | 
+:-------------------------:|
+![](figures/ex_seq.png)    |
+
+cDNA sequence              | Protein sequence
+:-------------------------:|:-------------------------:
+![](figures/cDNA_seq.png)  | ![](figures/protein_seq.png)
 4. Return back to the gene page for Smp_170450.
 
 ---
   
 Ok! Now, our researchers have gathered general information about the genes they're interested in. They have also inspected their structure and sequence. However, they don't have any clues about the genes' function! What do these genes and their encoded proteins do?
   
-Functional annotation tries to answer this question!
+Functional annotation tries to answer this question!<br>
+![](https://ars.els-cdn.com/content/image/1-s2.0-S1570963914002799-fx1.jpg)
 
 ### Task 6: Functional annotation: Explore the Gene Ontology terms associated with this gene
 A fast way to find out about the function of a gene’s product is to see which Gene Ontology (GO) terms have been associated with it.
@@ -216,8 +223,10 @@ A fast way to find out about the function of a gene’s product is to see which 
 Gene ontology is a formal representation of knowledge about a gene with respect to three aspects: Molecular Function, Cellular Component and Biological Process. Cellular Component GO terms describe where a protein is localised (in the membrane, extracellular, in the nucleus etc). Molecular Function GO terms describe the biochemical activity of the protein. Biological Process GO terms describe the pathways and broader processes that the protein contributes to.
  
 1. Gene Ontology information is available at the gene page level. While on the gene page, click "Biological process" or "Cellular Component" or "Molecular Function" from the Gene ontology section of the navigation menu.
+![](figures/click_go.png)
   
 2. A table appears with information about the Gene Ontology terms that have been associated with this gene. You can click on the link under the "Accession" column to find more about each Gene Ontology term. 
+![](figures/go_results.png)
   
 According to these results, it looks like Smp_170450, that according to our researchers might play a role in PZQ resistance, is associated with transmembrane transport and calcium ion transport. Would this information be useful to our researchers? PZQ disrupts calcium ion homeostasis in the worm, so the fact that our gene is associated with calcium transport is a really important piece of information.
 
@@ -227,27 +236,22 @@ Apart from Gene Ontology, the domains on the encoded protein might give us even 
   
 How we do go from a string of amino acids to predicting what this protein might do in the cell? This is where another type of database comes in: protein family databases. For the vast majority of predicted protein sequences, nobody will have done experiments to test what its function is. However, we can use the principle of homology to take proteins that are well-studied in one experimental system and infer that proteins of similar sequence in other organisms are likely to have similar structure, and therefore similar function. In reality, protein sequences are analysed in terms of domains: these are subsequences of a protein that have a defined tertiary structure or sequence motif, conferring a defined function. A protein can consist of several domains. When comparing proteins between organisms, often the region encoding a protein domain is highly conserved whilst the bit that connects different domains together is more divergent.
 
-A well known example of a protein domain database is Pfam. Pfam uses multiple sequence alignments of the known proteins with a certain domain to capture a representative model (a profile Hidden Markov Model) of that domain. Other protein domain databases, that might use slightly different methods to define domains, are: CATH, CDD, HAMAP, MobiDB Lite, Panther, PIRSF, PRINTS, Prosite, SFLD, SMART, SUPERFAMILY and TIGRfams. Luckily for us, all of these databases are united under the InterPro consortium .
+![](https://raw.githubusercontent.com/ProteinsWebTeam/interpro-docs/master/docs/images/member_databases/member_db.png)
+
+A well known example of a protein domain database is Pfam. Pfam uses multiple sequence alignments of the known proteins with a certain domain to capture a representative model (a profile Hidden Markov Model) of that domain. Other protein domain databases, that might use slightly different methods to define domains, are: CATH, CDD, HAMAP, MobiDB Lite, Panther, PIRSF, PRINTS, Prosite, SFLD, SMART, SUPERFAMILY and TIGRfams. Luckily for us, all of these databases are united under the InterPro consortium.
  
 1. Information about protein domains & features are available at the transcript page. To go to a transcript page you need to click on a transcript ID in the transcript table.
+![](figures/select_tr.png)
   
 2. On the left "Transcript-based displays" menu, click on "Domains & features".
+![](figures/select_domain.png)
 
 3. Use the tables to discover which domains and features have been annotated in this gene's protein.
+![](figures/domains.png)  
   
 According to the results, the domains in the encoded protein have to do with ion-binding and membrane exchange, agreeing with the Gene Ontology data for this gene.
   
-### Task 8: Functional Annotation: Explore phenotypes experimentally associated with this gene
 
-Since release 16, WormBase ParaSite 
-
-1. While on the gene page, click "Phenotypes" on the left "Gene-based displays" menu.<br><br>
-2. We need to wait a little bit for the phenotypes to load.<br><br>
-3. When loaded, two tables are visible: "Phenotypes associated with this gene" and "Phenotype, disease and trait annotations associated orthologues of this gene in other species".<br><br>
-4. In the first "Phenotypes associated with this gene" table, you can find a list of phnoetypes, diseases and traits associated directly with this gene for this species, based on experimental evidence. If there are no associate phenotypes for your gene in the first table, a message showing "None Found" will be displayed. You can try and work with a different gene (i.e. Smp_025260) which has phenotype associations. Literature evidence for each association can be found under the "Study" column.<br><br>
-5. The second table shows phenotype, disease and trait annotations associated orthologues of this gene in other species. Usually, there are not many phenotypic data available for parasitic worms, for this reason exploring phenotypes associated with other species like **C. elegans** is really useful for scientists. You can use the links in the table to navigate to the orthologous gene in the other species and find more information there.<br><br>
-6. Gene-phenotype association links can also be found in our [Downloads FTP server](https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/). Look for the files ending in ".phenotypes.gaf.gz"  and ".orthology-inferred_phenotypes.gaf.gz".<br><br>
-</details>  
 
 ---
   
@@ -255,7 +259,7 @@ Another approach to understanding what a gene does is comparing its sequence to 
   
 This analysis is called Comparative Genomics
 
-### Task 8: Comparative Genomics: Find orthologues for this gene in other species.
+### Task 8: Comparative Genomics: Find orthologues for your gene of interest in other species.
 
 Wait! What orthologues and paralogues are? Read [here](https://sciencing.com/different-variants-gene-called-8092322.html) and/or [here](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2001-2-8-interactions1002) to find more!
 
@@ -267,29 +271,59 @@ Wait! What orthologues and paralogues are? Read [here](https://sciencing.com/dif
 <ins>Why would researchers want to find orthologues in other species for their gene of interest?</ins> Function Annotation! If the function of this gene in S. mansoni is not known, you can check the function of its orthologues genes in other species like C. elegans or other Schistosomas. Many times you will find that orthologous genes function will be similar to this of your gene of interest.
   
 1. While on the gene page, click "Orthologues" on the left "Gene-based displays" menu under "Comparative genomics".
-  
+![](figures/click_orth.png)
+
 2. We need to wait a little bit for the orthologues to load.
-  
+
 3. When loaded, two tables are visible: "Summary of orthologues of this gene" and "Selected orthologues".
-  
+![](figures/orths.png)
+
+
 4. On the left "Summary of orthologues of this gene" menu, you can select to display orthologues for one or more taxonomic groups (nematodes, platyhelminths)".
+![](figures/orth_t1.png)
   
 5. The second table shows the list of orthologues found for this gene.
+![](figures/orth_t2.png)
   
 6. You can use the search box at the top right to filter orthologues for *C. elegans* by typing "elegans". What is the function of this gene's orthologue in C. elegans? It looks like its a Na/Ca exchanger protein, further supporting our hypothesis!
   
 7. Use the three buttons in the "Compare" column: "Alignment (protein)", "Alignment (cDNA)" and "Gene Tree (image)" to further explore the comparison.
-  
+![](figures/orth_t2_explore.png)
+
 8. Click on the "Gene Tree (image)" of one of the orthologues in the list, to explore the gene tree for the specific orthologue.
-  
+![](figures/gene_tree.png)
+
 9. You can follow the same instructions to discover paralogues too!
 
-#### Task 2g: Explore papers mentioning your gene of interest.
-<details closed>
-<summary>Solution</summary>
-1. While on the gene page, click "Literature" on the left "Gene-based displays" menu.<br><br>
-2. When loaded, a "Literature" table is visible. It lists the "Pubmed ID", "Title", "Authors" and "Journal" of all papers in EuropePMC about S. mansoni that mention your gene of interest.<br><br>
-</details>
+### Task 9: Functional Annotation: Explore phenotypes experimentally associated with this gene
+
+Since release 16, WormBase ParaSite hosts 350,000 *C. elegans* and *S. mansoni* gene-phenotype associations. These associations have been curated from the literature over many years, from RNAi and variant data.
+
+What about the other species? As the majority of helminth genes don’t currently have data from direct phenotypic assays, phenotypes have also been propagated between orthologues. For exaple, there are no gene-phenotype association data available for S. bovis. However, you can see the phenotypes associated with C. elegans or S. mansoni orthologues of your S. bovis gene of interest. Read more [here](https://wbparasite.wordpress.com/2021/09/06/announcing-wormbase-parasite-release-16/).
+
+1. While on the gene page, click "Phenotypes" on the left "Gene-based displays" menu.
+![](figures/clik_pheno.png)
+
+2. We need to wait a little bit for the phenotypes to load.
+
+3. When loaded, two tables are visible: "Phenotypes associated with this gene" and "Phenotype, disease and trait annotations associated orthologues of this gene in other species".
+![](figures/phenos.png)
+
+4. In the first "Phenotypes associated with this gene" table, you can find a list of phnoetypes, diseases and traits associated directly with this gene for this species, based on experimental evidence. If there are no associate phenotypes for your gene in the first table, a message showing "None Found" will be displayed. You can try and work with a different gene (i.e. Smp_025260) which has phenotype associations. Literature evidence for each association can be found under the "Study" column.
+![](figures/ptab1.png)
+
+5. The second table shows phenotype, disease and trait annotations associated orthologues of this gene in other species. Usually, there are not many phenotypic data available for parasitic worms, for this reason exploring phenotypes associated with other species like **C. elegans** is really useful for scientists. You can use the links in the table to navigate to the orthologous gene in the other species and find more information there.
+![](figures/ptab2.png)
+
+6. Gene-phenotype association links can also be found in our [Downloads FTP server](https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/). Look for the files ending in ".phenotypes.gaf.gz"  and ".orthology-inferred_phenotypes.gaf.gz".
+
+#### Task 10: Explore papers mentioning your gene of interest.
+
+1. While on the gene page, click "Literature" on the left "Gene-based displays" menu.
+![](figures/click_lit.png)
+
+2. When loaded, a "Literature" table is visible. It lists the "Pubmed ID", "Title", "Authors" and "Journal" of all papers in EuropePMC about S. mansoni that mention your gene of interest.
+![](figures/lit.png)
 
 ---
 ### Multiple querying 
