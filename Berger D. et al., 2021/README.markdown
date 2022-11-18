@@ -221,6 +221,8 @@ Functional annotation tries to answer this question!<br>
 A fast way to find out about the function of a gene’s product is to see which Gene Ontology (GO) terms have been associated with it.
   
 Gene ontology is a formal representation of knowledge about a gene with respect to three aspects: Molecular Function, Cellular Component and Biological Process. Cellular Component GO terms describe where a protein is localised (in the membrane, extracellular, in the nucleus etc). Molecular Function GO terms describe the biochemical activity of the protein. Biological Process GO terms describe the pathways and broader processes that the protein contributes to.
+
+You can read more about Gene Ontology [here](http://geneontology.org/).
  
 1. Gene Ontology information is available at the gene page level. While on the gene page, click "Biological process" or "Cellular Component" or "Molecular Function" from the Gene ontology section of the navigation menu.
 ![](figures/click_go.png)
@@ -317,13 +319,61 @@ What about the other species? As the majority of helminth genes don’t currentl
 
 6. Gene-phenotype association links can also be found in our [Downloads FTP server](https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/). Look for the files ending in ".phenotypes.gaf.gz"  and ".orthology-inferred_phenotypes.gaf.gz".
 
-#### Task 10: Explore papers mentioning your gene of interest.
+### Task 10: Explore papers mentioning your gene of interest.
 
 1. While on the gene page, click "Literature" on the left "Gene-based displays" menu.
 ![](figures/click_lit.png)
 
 2. When loaded, a "Literature" table is visible. It lists the "Pubmed ID", "Title", "Authors" and "Journal" of all papers in EuropePMC about S. mansoni that mention your gene of interest.
 ![](figures/lit.png)
+
+### Task 11: Explore the 3D protein structure of your protein using AlphaFold
+
+Knowledge of protein's 3D structure is a huge hint for understanding how the protein works, and use that information for different purposes; control or modify protein's function, predict what molecules bind to that protein and understand various biological interactions, assist drug discovery or even design our own proteins.
+
+Protein structure prediction is the inference of the three-dimensional structure of a protein from its amino acid sequence—that is, the prediction of its secondary and tertiary structure from primary structure.
+
+Predicting the 3D structure of proteins is one of the fundamental grand challenges in biology. By solving this challenge, we can dramatically deepen our understanding of human health, disease, and our environment, especially within areas like drug design and sustainability.
+
+![](figures/3d_prots.png)
+
+AlphaFold, the state-of-the-art AI system developed by DeepMind, is able to computationally predict protein structures with unprecedented accuracy and speed. Working in partnership with EMBL’s European Bioinformatics Institute (EMBL-EBI), we’ve released over 200 million protein structure predictions by AlphaFold that are freely and openly available to the global scientific community. Included are nearly all catalogued proteins known to science – with the potential to increase humanity’s understanding of biology by orders of magnitude.
+
+1. AlphaFold predicted model is browsable from the transcript page. Go to the transcript page.
+![](figures/select_tr.png)
+
+2. Click "AlphaFold predicted model" on the Navigation menu under "Protein information".
+
+3. We can now view the shiny new interactive 3D AlphaFold structure for our protein of interest. The interactive molecular viewer visualizes the structure, coloured by the per-residue pLDDT confidence measure.
+
+![](figures/af_widget.png)
+
+4. Drag and drop with your mouse over the protein model to rotate it and use your mouse wheel to zoom in/out.
+
+5. You can use the right panel to visualise exons as well protein domains and features on the 3D model. This might give you a better understanding of where your domains of interest are.
+
+6. You can use click on any Amino-Acid residue and the widget will zoom in on this residue in the protein model.
+
+7. Take a note of the AlphaFold accession ID.
+
+8. Go to https://alphafold.ebi.ac.uk/ and insert the accession ID from step 7 on the search bar. Click search.
+![](figures/af_search.png)
+
+9. Click on the protein title in the search results list.
+![](figures/af_sres.png)
+
+10. You're now on the AlphaFold's page for our protein of interest.
+![](figures/af_page.png)
+
+11. You can download the structure file using the buttons at the top.
+
+12. Researchers could use the structure file to perform docking simulations (https://zhanggroup.org/EDock/) against different ligands, protein structure alignment with another protein (https://zhanggroup.org/TM-align/), or explore the tools of the PDB suite (https://www.ebi.ac.uk/pdbe/pdbe-services).
+
+
+
+
+
+
 
 ---
 ### Multiple querying 
@@ -412,11 +462,4 @@ BioMart video Tutorial [here](https://www.ensembl.org/Multi/Help/Movie?db=core;i
 
   
   
-  
-  4. On the left "Transcript-based displays" menu, click on the "AlphaFold predicted model"
-  
-5. Use the "AlphaFold predicted model" widget to discover the 3D protein structure of the protein
-  
-6. Use your mouse (drag/drop) to move and rotate the protein. You can zoom/unzoom using your mouse wheel
-  
-7. Use the right side menu to show/hide different protein/gene features (e.g. "Exons","PANTHER","Pfam" etc).
+
