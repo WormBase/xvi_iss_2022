@@ -375,7 +375,11 @@ AlphaFold, the state-of-the-art AI system developed by DeepMind, is able to comp
 11. You can download the structure file using the buttons at the top. At the moment you can download the structure in
 
 12. Researchers could use the structure file to perform subsequent analyses. A great source of online tools that can be used with the downloaded structures from AlphaFold, is the [Zhang group Online-serivces portal](https://zhanggroup.org/).
-  - docking simulations (https://zhanggroup.org/EDock/) against different ligands, protein structure alignment with another protein (https://zhanggroup.org/TM-align/), or explore the tools of the PDB suite (https://www.ebi.ac.uk/pdbe/pdbe-services).
+  - Docking simulations (https://zhanggroup.org/EDock/) against different ligands.
+    Useful resources where you can find ligand structures to perform simulations agaist:
+      - [ChEMBL](https://www.ebi.ac.uk/chembl/) is a useful resource where you can find ligand structures to perform simulations agaist.
+      - [Ligand Expo](http://ligand-expo.rcsb.org/ld-search.html).
+  - Protein structure alignment with another protein (https://zhanggroup.org/TM-align/).
 
 ---
 ### Multiple querying 
