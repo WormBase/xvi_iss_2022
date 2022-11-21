@@ -187,6 +187,7 @@ This could be a very helpful functionality. Imagine you have generated RNA-Seq d
 Data files you can upload as tracks in Jbrowse:
 - Alignment files (genome sequencing data - reads): JBrowse can display alignments directly from BAM files, with no pre-processing necessary. Just upload your BAM file and its accompanied index file (BAI file).
 - Genomic annotations and features (gene models or any other genomic features): JBrowse can import feature data from [GFF](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md) or [BED](https://www.ensembl.org/info/website/upload/bed.html) files.
+- Variation datasets: JBrowse can display feature data directly from [VCF](https://samtools.github.io/hts-specs/VCFv4.2.pdf) files (variants, mutations, SNPs, etc), and has a track type that is optimized for displaying the potentially large amounts of detailed data that go with each variant.
 
 11. To learn more about Jbrowse visit our help page here (https://parasite.wormbase.org/info/Browsing/genome_browser_jbrowse.html) and the offical jbrowse [webpage](https://jbrowse.org/jbrowse1.html).
   
