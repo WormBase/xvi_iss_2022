@@ -178,11 +178,17 @@ Using Jbrowse:
 8. You are being redirected to Jbrowse. When Jbrowse loads use your mouse to navigate around the gene and find nearby genes. Click on the gene models to see more information.
 ![](figures/jbrowse.png)      
 
-9. Use the "Select tracks" at the top-left of the browser and select a few tracks to add to the view.
+9. Use the "Select tracks" at the top-left of the browser and select a few tracks to add to the view. You can filter RNA-Seq tracks (S. mansoni has the most RNA-Seq tracks compared to any of our other species".
 
 10. You can also load your own tracks by clicking "Track"->"Open track file or URL" from the top menu.
 
-11. To learn more about Jbrowse visit our help page here (https://parasite.wormbase.org/info/Browsing/genome_browser_jbrowse.html).
+This could be a very helpful functionality. Imagine you have generated RNA-Seq data for a specific isolate of *S. mansoni*, and you would like to visualise how the sequencing reads you generated lie on a specific gene model you're interested in. Jbrowse gives you the functionality to upload a file from your own computer.
+
+Data files you can upload as tracks in Jbrowse:
+- Alignment files (genome sequencing data - reads): JBrowse can display alignments directly from BAM files, with no pre-processing necessary. Just upload your BAM file and its accompanied index file (BAI file).
+- Genomic annotations and features (gene models or any other genomic features): JBrowse can import feature data from [GFF](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md) or [BED](https://www.ensembl.org/info/website/upload/bed.html) files.
+
+11. To learn more about Jbrowse visit our help page here (https://parasite.wormbase.org/info/Browsing/genome_browser_jbrowse.html) and the offical jbrowse [webpage](https://jbrowse.org/jbrowse1.html).
   
 Tip: Jbrowse is also accessible via a button in [WormBase ParaSite genome list](https://parasite.wormbase.org/species.html) and the [genome's landing page](https://parasite.wormbase.org/Schistosoma_mansoni_prjea36577).
  
