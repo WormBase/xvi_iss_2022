@@ -1,3 +1,24 @@
+
+# WormBase ParaSite Tools - Gene-set enrichment analysis
+
+Gene set enrichment analysis (GSEA) (also called functional enrichment analysis or pathway enrichment analysis) is a method to identify classes of genes or proteins that are over-represented in a large set of genes or proteins, and may have an association with disease phenotypes.
+
+![image](https://user-images.githubusercontent.com/33452269/203346104-4ebe92bf-65c3-44d3-8e16-8bf4cd3342f8.png)
+
+In our previous practical session we talked about Gene Ontology (GO) [here](https://github.com/WormBase/xvi_iss_2022/tree/main/WBPS-Genomes_and_genes#task-6-functional-annotation-explore-the-gene-ontology-terms-associated-with-this-gene).
+"Gene Ontology" enrichment analysis is one of the most commonly used enrichment analyses.
+
+Gene ontology is a formal representation of knowledge about a gene with respect to three aspects:
+Molecular Function, Cellular Component and Biological Process.
+
+So what is the Gene Ontology (GO) enrichment analysis? Fundamentally, the gene ontology analysis is meant to answer a very simple question: “Given a list of genes found to be differentially expressed in my phenotype (e.g. disease) vs. control (e.g. healthy), what are the biological processes, cellular components and molecular functions that are implicated in this phenotype?”
+
+Instead of manually trying to identify which genes in your list of differentially expressed genes have similar biological processes, cellular component and molecular functions, the GO enrichment analysis does it for you. More specifically, it clusters the genes into gene ontologies group, performs statistical analysis and shows you the most significantly overepressented ontologies!
+
+Let's try to run a Gene Ontology enrichment analysis using the list of downregulated genes the researchers discovered between 5-AzaC-treated females and controls.
+
+
+
 ## The paper
 ### The anti-fecundity effect of 5-azacytidine (5-AzaC) on Schistosoma mansoni is linked to dis-regulated transcription, translation and stem cell activities.
 #### Geyer KK, Munshi SE, Vickers M, Squance M, Wilkinson TJ, Berrar D, Chaparro C, Swain MT, Hoffmann KF
@@ -23,18 +44,7 @@ They then wanted to perform Gene Set Enrichment Analysis on these Differentially
 
 Wait! What gene-enrichment analysis is?
 
-Gene set enrichment analysis (GSEA) (also called functional enrichment analysis or pathway enrichment analysis) is a method to identify classes of genes or proteins that are over-represented in a large set of genes or proteins, and may have an association with disease phenotypes.
 
-"Gene Ontology" enrichment analysis is one of the most commonly used enrichment analyses.
-
-Gene ontology is a formal representation of knowledge about a gene with respect to three aspects:
-Molecular Function, Cellular Component and Biological Process.
-
-So what is the Gene Ontology (GO) enrichment analysis? Fundamentally, the gene ontology analysis is meant to answer a very simple question: “Given a list of genes found to be differentially expressed in my phenotype (e.g. disease) vs. control (e.g. healthy), what are the biological processes, cellular components and molecular functions that are implicated in this phenotype?”
-
-Instead of manually trying to identify which genes in your list of differentially expressed genes have similar biological processes, cellular component and molecular functions, the GO enrichment analysis does it for you. More specifically, it clusters the genes into gene ontologies group, performs statistical analysis and shows you the most significantly overepressented ontologies!
-
-Let's try to run a Gene Ontology enrichment analysis using the list of downregulated genes the researchers discovered between 5-AzaC-treated females and controls.
 
 #### Task 1: Perform Gene Set Enrichment Analysis (GSEA) on the differentially expressed gene-sets researchers discovered between 5-AzaC-treated females and controls.
 
@@ -2151,14 +2161,27 @@ Smp_053610<br>
 Smp_104030<br>
 </details>
 
-<details closed>
-<summary>Solution</summary>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/)<br>
-2. Click "Tools" at the top menu.<br>
-3. Click "g:Profiler" in the tools table.<br>
-4. You are now inside g:Profiler. Paste the list of downregulated gene IDs into the central text box. Select "Schistosoma Mansoni" using the "Organism" drop-down menu and then click on "Run Query".<br>
-5. When results appear, scroll down and hover over the points in the graph to explore gene ontologies which are over-represented in your list of genes. You can also click on "Detailed Results" tab to see a table with all the enriched Gene ontology terms.<br>
-</details>
+
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/)
+
+2. Click "Tools" at the top menu.
+
+3. Click "g:Profiler" in the tools table.
+
+<img width="1440" alt="Screenshot 2022-11-22 at 17 29 02" src="https://user-images.githubusercontent.com/33452269/203386793-b5f8080f-c53f-4cba-9023-876982684f83.png">
+
+4. You are now inside g:Profiler. Paste the list of downregulated gene IDs into the central text box. Select "Schistosoma Mansoni" under WormBase ParaSite using the "Organism" drop-down menu and then click on "Run Query".
+
+<img width="1189" alt="Screenshot 2022-11-22 at 17 31 42" src="https://user-images.githubusercontent.com/33452269/203386839-b29c7bd3-ed8c-4f35-b023-50f4da7faf28.png">
+
+5. When results appear, scroll down and hover over the points in the graph to explore gene ontologies which are over-represented in your list of genes. You can also click on "Detailed Results" tab to see a table with all the enriched Gene ontology terms.
+
+<img width="1180" alt="Screenshot 2022-11-22 at 17 35 06" src="https://user-images.githubusercontent.com/33452269/203387409-3a0022e4-acf5-49cd-bded-8d0d50ffe81a.png">
+
+![gprof](https://user-images.githubusercontent.com/33452269/203387460-d981bd50-7e4a-4dc0-b540-1b1eb8a7d5ee.png)
+
+
+You can read more about the details of the results in the [gProfiler webpage](https://biit.cs.ut.ee/gprofiler/page/docs).
 
 Are there any gene ontology terms relevant to our research?
 
