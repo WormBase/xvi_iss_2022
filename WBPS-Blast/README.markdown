@@ -83,7 +83,7 @@ similarity has a 5 in 100 (1 in 20) chance of occurring by chance alone.
 Researchers say: "This analysis identified three paralogs within the S. haematobium genome, all with predicted transcripts with high identity to M-IPSE (C_00050 [67% amino acid identity], C_00244 [63%], and B_00796 [56%])." Are these the genes you identified?
 Hint: C_00050 is 	MS3_0018943, C_00244 is MS3_0018942 and B_00796 is MS3_0018941.
 
-#### Task 2: According to the researchers, MS3_0018943, MS3_0018942 and MS3_0018941 are paralogous genes in S. haematobium. Use WormBase ParaSite to support or reject this claim.
+### Task 2: According to the researchers, MS3_0018943, MS3_0018942 and MS3_0018941 are paralogous genes in S. haematobium. Use WormBase ParaSite to support or reject this claim. You can use [this guide](https://github.com/WormBase/xvi_iss_2022/tree/main/WBPS-Genomes_and_genes) for help.
 
 <details closed>
 <summary>Solution</summary>
@@ -94,7 +94,7 @@ Hint: C_00050 is 	MS3_0018943, C_00244 is MS3_0018942 and B_00796 is MS3_0018941
 5. MS3_0018941 and MS3_0018942 are listed in the "Paralogues" table, meaning that MS3_0018943, MS3_0018942 and MS3_0018941 are paralogous genes in S. haematobium. Researchers are right!
 </details>
 
-#### Task 3: Compare the protein domains of these 3 S. haematobium proteins (MS3_0018943, MS3_0018942 and MS3_0018941) with their S. mansoni homologue (Smp_112110). Can you see any similarities?
+### Task 3: Compare the protein domains of these 3 S. haematobium proteins (MS3_0018943, MS3_0018942 and MS3_0018941) with their S. mansoni homologue (Smp_112110). Can you see any similarities? You can use [this guide](https://github.com/WormBase/xvi_iss_2022/tree/main/WBPS-Genomes_and_genes) for help.
 
 <details closed>
 <summary>Solution</summary>
