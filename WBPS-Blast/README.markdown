@@ -30,35 +30,37 @@ In this study, researchers explore if S. haematobium also express a protein simi
 Let's try to follow the same steps that these researchers used to perform their analysis using WormBase ParaSite.
 ---
 
-### Identify homologs of the S. mansoni IPSE proteim in the S. haematobium genome. 
+### Blast in WormBase ParaSite
 
 Researchers say: "To identify homologs of S. mansoni IPSE in the S. haematobium genome, we performed a BLAST search at WormBase ParaSite (http://parasite.wormbase.org) using the predicted transcript of M-IPSE (Smp_112110.1)"
 
-Wait! What BLAST is?
+### Task 1: Identify homologs of S. mansoni's Smp_112110.1 in the S. haematobium genome using WormBase ParaSite's BLAST/BLAT tool.
 
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).
 
+2. Paste the Gene ID (i.e. Smp_112110) in the search box at the top right corner of the page and press Enter.
 
-BLAST can be used both for DNA and protein sequences.
+3. The search will return the gene entry you searched for. Click on the Gene ID to open up the corresponding gene page.
 
-#### Task 1a: Identify homologs of S. mansoni's Smp_112110.1 in the S. haematobium genome using BLAST.
+4. While on the gene page, click on the Smp_112110.1 transcript ID on the transcript table to get to its transcript page.
 
-<details closed>
-<summary>Solution</summary>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
-2. Paste the Gene ID (i.e. Smp_112110) in the search box at the top right corner of the page and press Enter.<br><br>
-3. The search will return the gene entry you searched for. Click on the Gene ID to open up the corresponding gene page.<br><br>
-4. While on the gene page, click on the Smp_112110.1 transcript ID on the transcript table to get to its transcript page.<br><br>
-5. While on the transcript page, click "Protein" under "Sequence" on the left "Transcript-based displays" menu.<br><br>
-6. Click the "BLAST this sequence" button above the protein sequence. This will take you to WormBase ParaSite's BLAST tool page. The protein's sequence is automatically entered into the "Sequence data" dialog box. Make sure "Protein" is selected.<br><br>
-7. Selecting the species to search against: Select custom species list. On the pop-up box use the find box at the top left to search for "Schistosoma haematobium". Once "Schistosoma haematobium (PRJNA78265)" appears on the left panel, select it by ticking the tick box. Click on the tick button at the top right of the box to submit your selection. The "Search against" field should now display only one species: Schistosoma haematobium (PRJNA78265). Make sure "Protein database" is selected.<br><br>
-8. Leave all the other options unchanged and click "Run".<br><br>
-9. You'll be prompted to a page showing a table with all your recent BLAST tickets (currently running, failed or completed). The progression of the ticket gets automatically refreshed every 10 seconds until fully completed. The icons on the right can be used to download the results of a ticket, edit and resubmit the ticket, share the ticket via URL or delete the ticket. Click the View results link to see the results.<br><br>
-10. You're now on the Results page for your run. Follow the links in the results table to get:<br>
-- Genomic location: shows the BLAST hit on the Region in detail view in the Location tab of the Genome Browser. The BLAST hit will appear as a red bar along the genome. You may want to click on the red bar to view a summary of the search, including E-Value, %ID, etc.<br>
+5. While on the transcript page, click "Protein" under "Sequence" on the left "Transcript-based displays" menu.
+
+6. Click the "BLAST this sequence" button above the protein sequence. This will take you to WormBase ParaSite's BLAST tool page. The protein's sequence is automatically entered into the "Sequence data" dialog box. Make sure "Protein" is selected.<br>In this case, we performed a BLAST search using the sequence directly from the gene page. However, if you would like to BLAST your own sequence, you can just click "BLAST" at the top menu and input your sequence(s) into FASTA file format. Read about the FASTA file format [here](https://zhanggroup.org/FASTA/#:~:text=What%20is%20FASTA%20format%3F,by%20lines%20of%20sequence%20data.).
+
+7. Selecting the species to search against: Select custom species list. On the pop-up box use the find box at the top left to search for "Schistosoma haematobium". Once "Schistosoma haematobium (PRJNA78265)" appears on the left panel, select it by ticking the tick box. Click on the tick button at the top right of the box to submit your selection. The "Search against" field should now display only one species: Schistosoma haematobium (PRJNA78265). Make sure "Protein database" is selected.<br>You can also use the round radio buttons if you would like to perform a search agaist all species, nematodes, platyhelmiths, or against a custom species list.
+
+8. Leave all the other options unchanged and click "Run".<br>The rest of the options include scoring filtering and specific alignment parameters. It is highly recommended to also add a description for your BLAST search so it will be easily discoverable later.
+
+9. You'll be prompted to a page showing a table with all your recent BLAST tickets (currently running, failed or completed). The progression of the ticket gets automatically refreshed every 10 seconds until fully completed. The icons on the right can be used to download the results of a ticket, edit and resubmit the ticket, share the ticket via URL or delete the ticket. Click the View results link to see the results.<br>![](https://static.ensembl.org/img/help/blast_image2.png)
+
+10. You're now on the Results page for your run. Follow the links in the results table to get:<br>![](https://static.ensembl.org/img/help/results_table_blast.png)<br><br>
+- Genomic location: shows the BLAST hit on the Region in detail view in the Location tab of the Genome Browser. The BLAST hit will appear as a red bar along the genome. You may want to click on the red bar to view a summary of the search, including E-Value, %ID, etc.<br>![](https://static.ensembl.org/img/help/results_blast_genomic.png)
 - Sequence: shows the genomic sequence or query sequence<br>
-- Alignment: shows the BLAST alignment<br><br>
+- Alignment: shows the BLAST alignment<br><br>Under the results table you can find the "HSP distribution on genome" image.
+
+
 11. According to the results, it looks like our query protein is very similar to three S. haematobium proteins: MS3_0018943, MS3_0018942 and MS3_0018941. The fourth hit, MS3_0018947 has a quite high E-value and low %ID making it probably a false match.
-</details>
 
 **The results page explained**
 The results are displayed in two sections:
