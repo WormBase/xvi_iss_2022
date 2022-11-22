@@ -1,3 +1,15 @@
+# WormBase ParaSite Tools - Variant Effect Predictor
+
+WormBase ParaSite allows researchers to assess the effects of their variation datasets through the Variation Effect Predictor (VEP) tool.
+
+The Variant Effect Predictor (VEP) determines the effect of your variants (SNPs, insertions, deletions, CNVs or structural variants) on genes, transcripts, and protein sequence, as well as regulatory regions through a simple point-and-click interface. Simply input the coordinates of your variants and the nucleotide changes to find out the:
+
+- Genes and Transcripts affected by the variants.
+- Location of the variants (e.g. upstream of a transcript, in coding sequence, in non-coding RNA, in regulatory regions).
+- Consequence of your variants on the protein sequence (e.g. stop gained, missense, stop lost, frameshift).
+- SIFT and PolyPhen-2 scores for changes to protein sequence.
+... And more!
+
 ## The paper
 ### Genetic analysis of praziquantel response in schistosome parasites implicates a transient receptor potential channel
 #### Le Clec'h W, Chevalier FD, Mattos ACA, Strickland A, Diaz R, McDew-White M, Rohr CM, Kinung'hi S, Allan F, Webster BL, Webster JP, Emery AM, Rollinson D, Djirmay AG, Al Mashikhi KM, Al Yafae S, Idris MA, Moné H, Mouahid G, LoVerde P, Marchant JS, Anderson TJC.
@@ -15,21 +27,8 @@ We surveyed Smp_246790 sequence variations in 259 wild-type parasites from diffe
 Let's try to follow the same steps that these researchers used to perform this part of their analysis using WormBase ParaSite.
 ---
 
-### Assess the effects of variants the researchers identified when sequenced the Smp_246790 gene in 259 wild-type parasites.
-
-WormBase ParaSite allows researchers to assess the effects of their variation datasets through the Variation Effect Predictor (VEP) tool.
-
-The Variant Effect Predictor (VEP) determines the effect of your variants (SNPs, insertions, deletions, CNVs or structural variants) on genes, transcripts, and protein sequence, as well as regulatory regions through a simple point-and-click interface. Simply input the coordinates of your variants and the nucleotide changes to find out the:
-
-- Genes and Transcripts affected by the variants.
-- Location of the variants (e.g. upstream of a transcript, in coding sequence, in non-coding RNA, in regulatory regions).
-- Consequence of your variants on the protein sequence (e.g. stop gained, missense, stop lost, frameshift).
-- SIFT and PolyPhen-2 scores for changes to protein sequence.
-... And more!
-
-----
-
-## Task 1: Use VEP to assess the effects of the variants our researchers sequenced
+### 
+## Task 1: Assess the effects of variants the researchers identified when sequenced the Smp_246790 gene in 259 wild-type parasites.
 
 <details closed>
 <summary>Click here to view the Smp_246790 gene variants in VCF format</summary>
@@ -224,21 +223,36 @@ SM_V9_3 2667585 . C CT . . . <br>
 VCF is a text file format which is used to store information about a position in the genome. The format also has the ability
 to contain genotype information on samples for each position and is widely used as the gold standard format for storing variation information. Learn more [here](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
 
-<details closed>
-<summary>Solution</summary>
-1. Go to WormBase ParaSite (https://parasite.wormbase.org/).<br><br>
-2. Click ”Tools" at the top menu.<br><br>
-3. Click "Variant Effect Predictor" on the "Processing your data" table.<br><br>
-4. When you reach the VEP web interface, you will be presented with a form to enter your data and alter various options.<br><br>
-5. First select the correct species for your data. Start typing into the box to get an autocomplete list of species. Make sure the species is set to "Schistosoma mansoni (PRJEA36577), (Tax ID 6183)".<br><br>
-6. You can optionally choose a name for the data you upload - this can make it easier for you to identify jobs and files that you have uploaded to the VEP at a later point.
-7. Paste all the lines with the variants in the VCF format from above into the "Either paste data:" dialog box.
-8. Leave all extra options ("Identifiers","Additional annotations","Filtering options") to their default values. If you want to learn more about these extra options see [here](https://parasite.wormbase.org/info/Tools/vep.html).
-9. Click "Run". 
-10. Once you have clicked "Run", your input will be checked and submitted to the VEP as a job. All jobs associated with your session or account are shown in the "Recent Tickets" table. You may submit multiple jobs simultaneously.
-</details>
+1. Go to WormBase ParaSite (https://parasite.wormbase.org/).
 
-----
+2. Click ”Tools" at the top menu.
+
+3. Click "Variant Effect Predictor" on the "Processing your data" table.
+
+4. When you reach the VEP web interface, you will be presented with a form to enter your data and alter various options.
+![image](https://user-images.githubusercontent.com/33452269/203388942-5d43a2d7-8895-4279-8829-87c6c413d262.png)
+
+5. First select the correct species for your data. Start typing into the box to get an autocomplete list of species. Make sure the species is set to "Schistosoma mansoni (PRJEA36577), (Tax ID 6183)".
+
+6. You can optionally choose a name for the data you upload - this can make it easier for you to identify jobs and files that you have uploaded to the VEP at a later point.
+
+7. Paste all the lines with the variants in the VCF format from above into the "Either paste data:" dialog box.
+
+
+Apart from pasting, you also have three options for uploading your data:
+
+- File upload - click the "Choose file" button and locate the file on your system
+- File URL - point the VEP to a file hosted on a publically accessible address. This can be either a http:// or ftp:// address.
+
+Once you have uploaded some data, you can select it as the input for future jobs by choosing the data from the drop down menu.
+The format of your data is automatically detected.
+
+8. Leave all extra options ("Identifiers","Additional annotations","Filtering options") to their default values. If you want to learn more about these extra options see [here](https://parasite.wormbase.org/info/Tools/vep.html).
+
+9. Click "Run".
+
+10. Once you have clicked "Run", your input will be checked and submitted to the VEP as a job. All jobs associated with your session or account are shown in the "Recent Tickets" table. You may submit multiple jobs simultaneously.
+
 
 #### Interpreting VEP results
 
@@ -261,6 +275,8 @@ Pie charts are shown detailing the proportion of consequence types called across
 
 <ins>Results preview table</ins>
 The results table shows one row per transcript and variant. By default all of the columns are shown; to temporarily hide columns, click the blue "Show/hide columns" button and select or deselect the columns you wish to view. The columns you select will be recalled when viewing other jobs.
+
+<img width="1151" alt="Screenshot 2022-11-22 at 18 14 49" src="https://user-images.githubusercontent.com/33452269/203390811-6c9ca680-bf1f-47f6-b19b-f3faaa642e32.png">
 
 Hover over a column title to see a description. See the [Ensembl VEP documentation](http://www.ensembl.org/info/docs/tools/vep/vep_formats.html#output) for more details on each of the results columns.
 
